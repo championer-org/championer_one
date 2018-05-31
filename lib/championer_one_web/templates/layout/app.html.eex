@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <%= render "navbar.html" %>
+        <%= render ChampionerOneWeb.LayoutView, "navbar.html" %>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
