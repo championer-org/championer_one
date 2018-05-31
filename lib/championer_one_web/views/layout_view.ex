@@ -1,6 +1,7 @@
 defmodule ChampionerOneWeb.LayoutView do
   use ChampionerOneWeb, :view
-  def render("navbar.html", assigns) do
-    "rendering with assigns #{inspect Map.keys(assigns)}"
+
+  def title do
+    "Hello ChampionerOne!"
   end
 end
