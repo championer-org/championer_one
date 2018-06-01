@@ -17,6 +17,12 @@ defmodule ChampionerOneWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    resources "/mission", MissionController, only: [:index]
+    resources "/volunteer", VolunteerController, only: [:index]
+    resources "/donate", DonateController, only: [:index]
+    resources "/products", ProductsController, only: [:index]
+    resources "/partners", PartnersController, only: [:index]
+    resources "/contact", ContactController, only: [:index]
   end
 
   # Other scopes may use custom stacks.
