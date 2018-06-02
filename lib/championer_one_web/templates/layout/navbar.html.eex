@@ -3,12 +3,12 @@
     <a href="#" class="brand-logo"><img src="<%= static_path(@conn, "/images/logo_yellow_teal.png") %>"></a>
 
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="#">Mission</a></li>
-      <li><a href="#">Volunteer</a></li>
-      <li><a href="#">Donate</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Partners</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/mission">Mission</a></li>
+      <li><a href="/volunteer">Volunteer</a></li>
+      <li><a href="/donate">Donate</a></li>
+      <li><a href="/products">Products</a></li>
+      <li><a href="/partners">Partners</a></li>
+      <li><a href="/contact">Contact</a></li>
     </ul>
   </div>
 </nav>
