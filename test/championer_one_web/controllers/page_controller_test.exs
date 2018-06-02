@@ -8,7 +8,7 @@ defmodule ChampionerOneWeb.PageControllerTest do
 
   test "GET /mission", %{conn: conn} do
     conn = get conn, "/mission"
-    assert html_response(conn, 200) =~ "Championer One's Mission!"
+    assert html_response(conn, 200) =~ "Championer One Mission!"
   end
   test "GET /volunteer", %{conn: conn} do
     conn = get conn, "/volunteer"
@@ -20,11 +20,11 @@ defmodule ChampionerOneWeb.PageControllerTest do
   end
   test "GET /products", %{conn: conn} do
     conn = get conn, "/products"
-    assert html_response(conn, 200) =~ "Championer One's products"
+    assert html_response(conn, 200) =~ "Championer One products"
   end
   test "GET /partners", %{conn: conn} do
     conn = get conn, "/partners"
-    assert html_response(conn, 200) =~ "Meet Championer One's partners"
+    assert html_response(conn, 200) =~ "Meet Championer One partners"
   end
 
   test "GET /contact", %{conn: conn} do

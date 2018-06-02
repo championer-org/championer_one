@@ -1,0 +1,1 @@
+<h2><%= gettext "Get in contact with %{name}!", name: "Championer One" %></h2>

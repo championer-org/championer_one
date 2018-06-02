@@ -1,0 +1,1 @@
+<h2><%= gettext "Help %{name}. Donate!", name: "Championer One" %></h2>
