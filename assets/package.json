@@ -17,5 +17,8 @@
     "node-sass": "^4.9.0",
     "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "2.10.0"
+  },
+  "engines": {
+    "node": "8.9.4"
   }
 }
