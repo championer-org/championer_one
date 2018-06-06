@@ -929,7 +929,7 @@
       "integrity": "sha1-OciRjO/1eZ+D+UkqhI9iWt0Mdm8=",
       "dev": true,
       "requires": {
-        "hoek": "2.x.x"
+        "hoek": "4.2.1"
       }
     },
     "bower-config": {
@@ -2868,7 +2868,7 @@
       "requires": {
         "boom": "2.x.x",
         "cryptiles": "2.x.x",
-        "hoek": "2.x.x",
+        "hoek": "4.2.1",
         "sntp": "1.x.x"
       }
     },
@@ -2885,7 +2885,7 @@
     },
     "hoek": {
       "version": "4.2.1",
-      "resolved": "https://registry.npmjs.org/hoek/-/hoek-2.16.3.tgz",
+      "resolved": "https://registry.npmjs.org/hoek/-/hoek-4.2.1.tgz",
       "integrity": "sha1-ILt0A9POo5jpHcRxCo/xuCdKJe0=",
       "dev": true
     },
@@ -5084,7 +5084,7 @@
       "integrity": "sha1-ZUEYTMkK7qbG57NeJlkIJEPGYZg=",
       "dev": true,
       "requires": {
-        "hoek": "2.x.x"
+        "hoek": "4.2.1"
       }
     },
     "source-map": {
