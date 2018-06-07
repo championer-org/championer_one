@@ -1,1 +1,0 @@
-<h2><%= gettext "%{name} Mission!", name: "Championer One" %></h2>
