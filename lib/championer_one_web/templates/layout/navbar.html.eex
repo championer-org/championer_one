@@ -1,14 +1,16 @@
 <nav role="navigation">
   <div class="nav-wrapper teal darken-4">
-    <a href="#" class="brand-logo"><img src="<%= static_path(@conn, "/images/logo_yellow_teal.png") %>"></a>
+    <a href="/" class="brand-logo">
+      <img src="<%= static_path(@conn, "/images/logo_yellow_teal.png") %>">
+    </a>
 
     <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="/mission">Mission</a></li>
-      <li><a href="/volunteer">Volunteer</a></li>
-      <li><a href="/donate">Donate</a></li>
-      <li><a href="/products">Products</a></li>
-      <li><a href="/partners">Partners</a></li>
-      <li><a href="/contact">Contact</a></li>
+      <li><%= link "Mission", to: page_path(@conn, :mission) %></li>
+      <li><%= link "Volunteer", to: page_path(@conn, :volunteer) %></li>
+      <li><%= link "Donate", to: page_path(@conn, :donate) %></li>
+      <li><%= link "Products", to: page_path(@conn, :products) %></li>
+      <li><%= link "Partners", to: page_path(@conn, :partners) %></li>
+      <li><%= link "Contact", to: page_path(@conn, :contact) %></li>
     </ul>
   </div>
 </nav>
