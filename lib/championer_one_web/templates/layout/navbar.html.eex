@@ -1,6 +1,6 @@
 <nav role="navigation">
   <div class="nav-wrapper teal darken-4">
-    <a href="/" class="brand-logo">
+    <a href="<%= page_path(@conn, :index) %>" class="brand-logo">
       <img src="<%= static_path(@conn, "/images/logo_yellow_teal.png") %>">
     </a>
 
