@@ -9,7 +9,7 @@ addons:
 before_install:
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
 before_script:
-  ./chromedriver
+  - "export DISPLAY=:99.0"
 script:
   - mix credo
   - mix test
