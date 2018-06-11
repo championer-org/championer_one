@@ -7,8 +7,8 @@ otp_release:
 
 elixir:
   - 1.6.4
-# addons:
-#   chrome: stable
+addons:
+  chrome: stable
 # before_install:
   # - "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --headless --disable-gpu --remote-debugging-port=9222 http://localhost &"
   # - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
@@ -25,6 +25,7 @@ before_script:
   - sudo chmod +x chromedriver
   - sudo mv chromedriver /usr/local/bin
   - nohup chromedriver &
+  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
   - sleep 10
 script:
   - mix test
