@@ -25,6 +25,7 @@ before_script:
   - sudo chmod +x chromedriver
   - sudo mv chromedriver /usr/local/bin
   - nohup chromedriver &
+  - sleep 10
 script:
   - mix credo
   - mix test
