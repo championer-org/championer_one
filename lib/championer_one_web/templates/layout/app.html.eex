@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
-  <body>
+  <body class="yellow lighten-4">
     <div class="container">
       <header class="header">
         <%= render "navbar.html", assigns %>

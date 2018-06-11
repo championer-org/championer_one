@@ -1,1 +1,11 @@
-<h2><%= gettext "Welcome to %{name}!", name: "Championer One" %></h2>
+<h2 class="center"><%= gettext "Welcome to %{name}!", name: "Championer One" %></h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut tellus at eros volutpat blandit. Nullam vel suscipit enim. Vestibulum blandit erat diam, quis varius turpis volutpat in. Sed sit amet feugiat erat. Integer quis dui quis nulla feugiat tristique. Suspendisse blandit nulla ac justo rutrum, iaculis pulvinar felis condimentum. Vivamus pulvinar sem et mattis rhoncus. Proin lacinia rutrum velit at convallis.
+<p>
+Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+</p>
+<p>
+Phasellus tristique tristique volutpat. Nulla ut magna ligula. Ut urna mauris, ullamcorper et ornare in, egestas nec lectus. Phasellus nunc justo, imperdiet in risus ac, volutpat placerat lectus. Cras mauris purus, convallis in est vitae, tristique euismod diam. Ut accumsan ipsum efficitur, iaculis felis non, placerat nunc. Integer vitae erat nec nibh elementum porttitor. Nullam et sem eget leo suscipit feugiat. Nam quis dolor quis purus tincidunt molestie. Vestibulum vel elit quam. Curabitur consectetur aliquam risus, vel hendrerit urna congue at. Integer justo ante, commodo at porta et, rutrum vel ligula. Etiam ut cursus magna, eget tempus erat. Pellentesque volutpat egestas quam, id vulputate odio pretium in. Aenean accumsan eu felis eu varius.
+</p>
+<p>
+Ut mattis feugiat tempus. Praesent ut ultrices neque. Donec auctor ipsum pharetra quam faucibus finibus. Nunc malesuada tortor felis, quis tincidunt ante scelerisque vitae. Vivamus sodales pellentesque est, fringilla venenatis lorem ultrices vitae. Pellentesque et risus ut ex sollicitudin tincidunt. Don</p>
+</p>
