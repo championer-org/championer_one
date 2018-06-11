@@ -2,6 +2,8 @@
 # dist: trusty
 os: osx
 language: elixir
+otp_release:
+  - 20.3
 
 elixir:
   - 1.6.4
