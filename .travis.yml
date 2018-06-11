@@ -24,7 +24,7 @@ before_script:
   - unzip chromedriver_linux64.zip
   - sudo chmod +x chromedriver
   - sudo mv chromedriver /usr/local/bin
-  - chromedriver
+  - nohup chromedriver &
 script:
   - mix credo
   - mix test
