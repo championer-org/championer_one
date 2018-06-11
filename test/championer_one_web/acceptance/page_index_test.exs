@@ -6,7 +6,7 @@ defmodule ChampionerOneWeb.PageIndexTest do
   hound_session()
 
   test "presence of welcome message", %{conn: conn} do
-    navigate_to "/" #page_path(conn, :index)
+    navigate_to page_path(conn, :index)
     assert page_source() =~ "Welcome to Championer"
 
   end
