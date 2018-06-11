@@ -27,5 +27,6 @@ before_script:
   - nohup chromedriver &
   - sleep 10
 script:
-  - mix credo
   - mix test
+  - mix credo
+
