@@ -1,6 +1,5 @@
 sudo: required
 dist: trusty
-os: osx
 language: elixir
 otp_release:
   - 20.3
