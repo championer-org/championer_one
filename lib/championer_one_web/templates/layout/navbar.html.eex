@@ -1,7 +1,7 @@
 <nav role="navigation">
   <div class="nav-wrapper teal darken-4">
     <a href="<%= page_path(@conn, :index) %>" class="brand-logo">
-      <img src="<%= static_path(@conn, "/images/logo_yellow_teal.png") %>">
+      <img src="<%= static_path(@conn, "/images/championer_one_logo.png") %>" alt="ChampionerOne Logo">
     </a>
 
     <ul id="nav-mobile" class="right hide-on-med-and-down">
