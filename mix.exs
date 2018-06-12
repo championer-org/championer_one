@@ -42,7 +42,8 @@ defmodule ChampionerOne.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:hound, "~> 1.0"},
-      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false}
+      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
+      {:distillery, "~> 1.5"}
     ]
   end
 
