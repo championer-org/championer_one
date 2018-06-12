@@ -16,15 +16,17 @@
       <header class="header">
         <%= render "navbar.html", assigns %>
       </header>
-
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
-
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
-
     </div> <!-- /container -->
+
+    <%= render "background_video.html", assigns %>
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+    <main role="main">
+      <%= render @view_module, @view_template, assigns %>
+    </main>
+
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <script>require("js/app").Background.run()</script>
   </body>
 </html>
