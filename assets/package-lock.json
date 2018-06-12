@@ -1638,7 +1638,7 @@
           "dev": true,
           "requires": {
             "ansicolors": "~0.3.2",
-            "growl": "~1.8.1"
+            "growl": "~1.10.2"
           }
         }
       }
@@ -2790,8 +2790,8 @@
     },
     "growl": {
       "version": "1.10.2",
-      "resolved": "https://registry.npmjs.org/growl/-/growl-1.8.1.tgz",
-      "integrity": "sha1-Sy3sjZB+k9szZiTc7AGDUC+MlCg=",
+      "resolved": "https://registry.npmjs.org/growl/-/growl-1.10.2.tgz",
+      "integrity": "sha512-nidsnaoWVZIBLwA3sUIp3dA2DP2rT3dwEqINVacQ0+rZmc6UOwj2D729HTEjQYUKb+3wL9MeDbxpZtEiEJoUHQ==",
       "dev": true
     },
     "har-schema": {
