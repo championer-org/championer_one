@@ -1,17 +1,20 @@
 <footer>
-<div class="container">
-  <div class="row">
-    <div class="col s4">Col1</div>
-    <div class="col s4">Col2</div>
-    <div class="col s4">
-      <ul>
-        <li><%= link "Terms of Use", to: "#" %></li>
-        <li><%= link "Privacy Notice", to: "#" %></li>
-        <li><%= link "Sponsor Us", to: "#" %></li>
-        <li><%= link "Partner with Us", to: "#" %></li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col s4">
+        <ul>
+          <li><%= link "Mission", to: page_path(@conn, :mission) %></li>
+        </ul>
+      </div>
+      <div class="col s4">Col2</div>
+      <div class="col s4">
+        <ul>
+          <li><%= link "Terms of Use", to: "#" %></li>
+          <li><%= link "Privacy Notice", to: "#" %></li>
+          <li><%= link "Sponsor Us", to: "#" %></li>
+          <li><%= link "Partner with Us", to: "#" %></li>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
-  
 </footer>
