@@ -1,0 +1,8 @@
+<footer>
+  <ul>
+    <li><%= link "Terms of Use", to: "#" %></li>
+    <li><%= link "Privacy Notice", to: "#" %></li>
+    <li><%= link "Sponsor Us", to: "#" %></li>
+    <li><%= link "Partner with Us", to: "#" %></li>
+  </ul>
+</footer>
