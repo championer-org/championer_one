@@ -6,8 +6,8 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   hound_session()
 
   setup do
-    navigate_to page_path(conn, :index)
-    {:ok, conn: conn}
+    navigate_to page_path(build_conn(), :index)
+    {:ok, conn: build_conn()}
   end
 
   test "presence of footer section" do
