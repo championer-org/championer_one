@@ -35,4 +35,29 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     parent_element = find_element(:tag, "footer")
     assert(find_within_element(parent_element, :link_text, "Mission"))
   end
+
+  test "presence of footer Volunteer link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :link_text, "Volunteer"))
+  end
+
+  test "presence of footer Donate link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :link_text, "Donate"))
+  end
+
+  test "presence of footer Products link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :link_text, "Products"))
+  end
+
+  test "presence of footer Partners link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :link_text, "Partners"))
+  end
+
+  test "presence of footer Contact link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :link_text, "Contact"))
+  end
 end
