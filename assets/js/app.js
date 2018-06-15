@@ -20,7 +20,7 @@ import jQuery from "jquery"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
-export var Background = {
+export var App = {
   run: $( document ).ready(function() {
 
       scaleVideoContainer();
@@ -46,7 +46,7 @@ export var Background = {
 
   },
 
-  initBannerVideoSize: function initBannerVideoSize(element){
+  initBannerVideoSize: function initBannerVideoSize(element) {
 
       $(element).each(function(){
           $(this).data('height', $(this).height());
@@ -57,7 +57,7 @@ export var Background = {
 
   },
 
-  scaleBannerVideoSize: function scaleBannerVideoSize(element){
+  scaleBannerVideoSize: function scaleBannerVideoSize(element) {
 
       var windowWidth = $(window).width(),
       windowHeight = $(window).height() + 5,
@@ -66,12 +66,12 @@ export var Background = {
 
       // console.log(windowHeight);
 
-      $(element).each(function(){
+      $(element).each(function() {
           var videoAspectRatio = $(this).data('height')/$(this).data('width');
 
           $(this).width(windowWidth);
 
-          if(windowWidth < 1000){
+          if(windowWidth < 1000) {
               videoHeight = windowHeight;
               videoWidth = videoHeight / videoAspectRatio;
               $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});

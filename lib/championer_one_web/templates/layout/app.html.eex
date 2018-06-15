@@ -27,6 +27,6 @@
     </main>
 
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script>require("js/app").Background.run()</script>
+    <script>require("js/app").App.run()</script>
   </body>
 </html>
