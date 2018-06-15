@@ -1,0 +1,1 @@
+<h2><%= gettext "Partner with %{name}", name: "Championer One" %></h2>
