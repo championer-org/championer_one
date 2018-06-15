@@ -15,7 +15,7 @@
     "brunch": "^2.10.12",
     "clean-css-brunch": "2.10.0",
     "node-sass": "^4.9.0",
-    "sass-brunch": "brunch/sass-brunch#2d47094d8c259f07030a99433bc935d1ab753914",
+    "sass-brunch": "^2.10.4",
     "uglify-js-brunch": "2.10.0"
   },
   "engines": {
