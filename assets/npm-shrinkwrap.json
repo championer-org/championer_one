@@ -1625,20 +1625,20 @@
         "deep-assign": "^2.0.0",
         "detective": "^4.3.1",
         "glob": "^7.0.3",
-        "loggy": "~0.3.0",
+        "loggy": "1.0.2",
         "micro-promisify": "^0.1.1",
         "node-browser-modules": "^0.1.0",
         "true-case-path": "^1.0.2"
       },
       "dependencies": {
         "loggy": {
-          "version": "0.3.5",
-          "resolved": "https://registry.npmjs.org/loggy/-/loggy-0.3.5.tgz",
-          "integrity": "sha1-M/EoAbH2Bjlm6nnZtqJduPy8QQc=",
+          "version": "1.0.2",
+          "resolved": "https://registry.npmjs.org/loggy/-/loggy-1.0.2.tgz",
+          "integrity": "sha1-0MoxxCE5X4xGLQSHDdIijePE4hk=",
           "dev": true,
           "requires": {
-            "ansicolors": "~0.3.2",
-            "growl": "~1.10.2"
+            "chalk": "^1.1.1",
+            "native-notifier": "~0.1.0"
           }
         }
       }
