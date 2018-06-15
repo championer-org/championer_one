@@ -13,7 +13,7 @@
 // to also remove its path from "config.paths.watched".
 import "phoenix_html"
 import $ from "jquery"
-import JQuery from "jquery"
+import jQuery from "jquery"
 // Import local files
 //
 // Local files can be imported directly using relative
@@ -36,17 +36,17 @@ export var Background = {
           scaleBannerVideoSize('.video-container video');
       });
 
-  });
+  }),
 
-  function scaleVideoContainer() {
+  scaleVideoContainer: function scaleVideoContainer() {
 
       var height = $(window).height() + 5;
       var unitHeight = parseInt(height) + 'px';
       $('.homepage-hero-module').css('height',unitHeight);
 
-  }
+  },
 
-  function initBannerVideoSize(element){
+  initBannerVideoSize: function initBannerVideoSize(element){
 
       $(element).each(function(){
           $(this).data('height', $(this).height());
@@ -55,9 +55,9 @@ export var Background = {
 
       scaleBannerVideoSize(element);
 
-  }
+  },
 
-  function scaleBannerVideoSize(element){
+  scaleBannerVideoSize: function scaleBannerVideoSize(element){
 
       var windowWidth = $(window).width(),
       windowHeight = $(window).height() + 5,

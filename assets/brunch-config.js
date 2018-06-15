@@ -70,6 +70,7 @@ exports.config = {
     globals: {
       materialize: "materialize-css",
       $: "jquery",
+      jQuery: "jquery"
     }
   }
 };
