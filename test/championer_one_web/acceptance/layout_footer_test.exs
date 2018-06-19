@@ -11,8 +11,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   end
 
   test "presence of footer section" do
-    assert page_source() =~ "<footer>"
-    assert page_source() =~ "</footer>"
+    assert(find_element(:tag, "footer"))
   end
 
   test "presence of Terms of Use link" do
@@ -30,8 +29,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   test "presence of Partner with Us link" do
     assert(find_element(:link_text, "Partner with Us"))
   end
-
-  test "presence of footer mission link" do
+  test "presence of footer Mission link" do
     parent_element = find_element(:tag, "footer")
     assert(find_within_element(parent_element, :link_text, "Mission"))
   end
@@ -59,5 +57,30 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   test "presence of footer Contact link" do
     parent_element = find_element(:tag, "footer")
     assert(find_within_element(parent_element, :link_text, "Contact"))
+  end
+
+  test "presence of footer YouTube link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :class, "fa-youtube-play"))
+  end
+
+  test "presence of footer Twitter link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :class, "fa-twitter"))
+  end
+
+  test "presence of footer Facebook link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :class, "fa-facebook-official"))
+  end
+
+  test "presence of footer Instagram link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :class, "fa-instagram"))
+  end
+
+  test "presence of footer Medium link" do
+    parent_element = find_element(:tag, "footer")
+    assert(find_within_element(parent_element, :class, "fa-medium"))
   end
 end
