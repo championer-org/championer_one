@@ -7,7 +7,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
 
   setup do
     navigate_to page_path(build_conn(), :index)
-    {:ok, conn: build_conn()}
+    {:ok, conn: build_conn(), parent_element: find_element(:tag, "footer")}
   end
 
   test "presence of footer section" do
@@ -29,58 +29,50 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   test "presence of Partner with Us link" do
     assert(find_element(:link_text, "Partner with Us"))
   end
-  test "presence of footer Mission link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Mission"))
-  end
 
-  test "presence of footer Volunteer link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Volunteer"))
-  end
+  describe "within footer" do
+    test "presence of Mission link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Mission"))
+    end
 
-  test "presence of footer Donate link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Donate"))
-  end
+    test "presence of Volunteer link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Volunteer"))
+    end
 
-  test "presence of footer Products link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Products"))
-  end
+    test "presence of Donate link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Donate"))
+    end
 
-  test "presence of footer Partners link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Partners"))
-  end
+    test "presence of Products link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Products"))
+    end
 
-  test "presence of footer Contact link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :link_text, "Contact"))
-  end
+    test "presence of Partners link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Partners"))
+    end
 
-  test "presence of footer YouTube link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :class, "fa-youtube-play"))
-  end
+    test "presence of Contact link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :link_text, "Contact"))
+    end
 
-  test "presence of footer Twitter link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :class, "fa-twitter"))
-  end
+    test "presence of YouTube link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :class, "fa-youtube-play"))
+    end
 
-  test "presence of footer Facebook link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :class, "fa-facebook-official"))
-  end
+    test "presence of Twitter link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :class, "fa-twitter"))
+    end
 
-  test "presence of footer Instagram link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :class, "fa-instagram"))
-  end
+    test "presence of Facebook link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :class, "fa-facebook-official"))
+    end
 
-  test "presence of footer Medium link" do
-    parent_element = find_element(:tag, "footer")
-    assert(find_within_element(parent_element, :class, "fa-medium"))
+    test "presence of  Instagram link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :class, "fa-instagram"))
+    end
+
+    test "presence of  Medium link", %{parent_element: parent_element} do
+      assert(find_within_element(parent_element, :class, "fa-medium"))
+    end
   end
 end
