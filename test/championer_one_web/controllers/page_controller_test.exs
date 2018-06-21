@@ -37,7 +37,7 @@ defmodule ChampionerOneWeb.PageControllerTest do
   end
 
   test "GET /terms_of_use", %{conn: conn} do
-    conn = get conn, "/terms_of_use"
+    conn = get conn, page_path(conn, :terms_of_use)
     assert html_response(conn, 200) =~ "Championer One Terms of Use"
   end
 

@@ -14,8 +14,10 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     assert(find_element(:tag, "footer"))
   end
 
-  test "presence of Terms of Use link" do
-    assert(find_element(:link_text, "Terms of Use"))
+  test "presence of Terms of Use link", %{conn: conn}  do
+    find_element(:link_text, "Terms of Use")
+    |> click()
+    assert(current_path() == page_path(conn, :terms_of_use))
   end
 
   test "presence of Privacy Notice link" do
@@ -67,8 +69,16 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       assert(find_within_element(parent_element, :class, "fa-facebook-official"))
     end
 
-    test "presence of  Instagram link", %{parent_element: parent_element} do
-      assert(find_within_element(parent_element, :class, "fa-instagram"))
+    test "presence of Instagram link", %{parent_element: parent_element} do
+      parent_element
+      |> find_within_element(:class, "fa-instagram")
+      |> click()
+      # :timer.sleep(1000)
+      # IO.puts current_url()
+      # IO.inspect current_url(), label: "++++++++"
+      # assert(current_url() =~ "instagram.com/championerorg")
+      assert(page_source() =~ "<title>ChampionerOrg (@championerorg)" <>
+                              " • Instagram photos and videos</title>")
     end
 
     test "presence of  Medium link", %{parent_element: parent_element} do
