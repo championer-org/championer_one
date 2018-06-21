@@ -77,7 +77,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       # IO.puts current_url()
       # IO.inspect current_url(), label: "++++++++"
       # assert(current_url() =~ "instagram.com/championerorg")
-      assert(page_source() =~ "<title>ChampionerOrg (@championerorg) " <>
+      assert(page_source() =~ "<title>ChampionerOrg (@championerorg)" <>
                               " • Instagram photos and videos</title>")
     end
 
