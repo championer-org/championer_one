@@ -75,7 +75,8 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       |> click()
       :timer.sleep(1000)
       IO.puts current_url()
-      assert(current_url() =~ "https://www.instagram.com/championerorg/")
+      IO.inspect current_url(), label: "++++++++"
+      assert(current_url() =~ "instagram.com/championerorg")
     end
 
     test "presence of  Medium link", %{parent_element: parent_element} do
