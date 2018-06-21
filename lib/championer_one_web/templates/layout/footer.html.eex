@@ -15,7 +15,7 @@
         <li><%= link '', to: '#', class: "fa fa-youtube-play fa-lg" %></li>
         <li><%= link '', to: '#', class: "fa fa-twitter fa-lg" %></li>
         <li><%= link '', to: '#', class: "fa fa-facebook-official fa-lg" %></i></li>
-        <li><%= link '', to: '#', class: "fa fa-instagram fa-lg" %></li>
+        <li><%= link '', to: "https://www.instagram.com/championerorg/", class: "fa fa-instagram fa-lg" %></li>
         <li><%= link '', to: '#', class: "fa fa-medium fa-lg" %></li>
       </ul>
     </div>
