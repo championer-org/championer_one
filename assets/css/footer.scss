@@ -1,5 +1,4 @@
 li {
-  display: inline;
   margin: 3px;
 }
 
@@ -10,3 +9,15 @@ li {
 #social-media a {
   color: #ffecb3;
 }
+
+#social-media li {
+  display: inline;
+}
+
+.footer-copyright {
+  color: #DED91C
+}
+footer {
+  width: 100%;
+  bottom: 0;
+} 

@@ -1,6 +1,7 @@
 <footer class="teal darken-4">
   <div class="row">
-    <div class="col s5">
+    <div class="col s5 center">
+      <h5 class="yellow-text">Get Involved</h5>
       <ul id="footer-mobile">
         <li><%= link "Mission", to: page_path(@conn, :mission) %></li>
         <li><%= link "Volunteer", to: page_path(@conn, :volunteer) %></li>
@@ -10,7 +11,8 @@
         <li><%= link "Contact", to: page_path(@conn, :contact) %></li>
       </ul>
     </div>
-    <div class="col s2">
+    <div class="col s2 center">
+     <h5 class="yellow-text">Social Media</h5>
       <ul id="social-media">
         <li><%= link '', to: '#', class: "fa fa-youtube-play fa-lg" %></li>
         <li><%= link '', to: '#', class: "fa fa-twitter fa-lg" %></li>
@@ -19,7 +21,8 @@
         <li><%= link '', to: '#', class: "fa fa-medium fa-lg" %></li>
       </ul>
     </div>
-    <div class="col s5">
+    <div class="col s5 center">
+      <h5 class="yellow-text">Learn More</h5>
       <ul id="footer-mobile">
         <li><%= link "Terms of Use", to: page_path(@conn, :terms_of_use) %></li>
         <li><%= link "Privacy Notice", to: page_path(@conn, :privacy_notice) %></li>
@@ -27,5 +30,11 @@
         <li><%= link "Partner with Us", to: page_path(@conn, :partner_with_us) %></li>
       </ul>
     </div>
+  </div>
+  <div class="footer-copyright center">
+    <div>
+    Copyright © 2017-2018 Championer, Inc. All Rights Reserved.
+    </div>
+    <br>
   </div>
 </footer>
