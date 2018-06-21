@@ -5,26 +5,15 @@ otp_release:
   - 20.3
 elixir:
   - 1.6.4
+env:
+- MOZ_HEADLESS=1
 addons:
-  chrome: stable
+  firefox: latest
 before_install:
-  - "export CHROME_BIN=chromium-browser"
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - "travis_wait npm install -g grunt-cli"
-before_script:
-  - "curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/v0.7.8/install | bash"
-
-after_success:
-  - "./scripts/travis-upload.sh"
-
-notifications:
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/9f467aab5ea40801389a
-    on_success: change  # options: [always|never|change] default: always
-    on_failure: always  # options: [always|never|change] default: always
-    on_start: never     # options: [always|never|change] default: always
+- wget https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-linux64.tar.gz
+- mkdir geckodriver
+- tar -xvf geckodriver-v0.20.1-linux64.tar.gz -C geckodriver
+- export PATH=$PATH:$PWD/geckodriver     # options: [always|never|change] default: always
 script:
   - mix test
   - mix credo
