@@ -17,9 +17,7 @@ before_script:
   - sudo chmod +x chromedriver
   - sudo mv chromedriver /usr/local/bin
   - nohup chromedriver &
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - google-chrome-stable --headless --disable-gpu --screenshot --window-size=1280,1696 https://www.chromestatus.com/
 script:
   - mix test
   - mix credo
-
-
