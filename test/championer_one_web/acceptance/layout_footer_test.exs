@@ -73,6 +73,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       parent_element
       |> find_within_element(:class, "fa-instagram")
       |> click()
+      :timer.sleep(1000)
       assert(current_url() == "https://www.instagram.com/championerorg/")
     end
 
