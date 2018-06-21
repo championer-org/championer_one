@@ -14,78 +14,78 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     assert(find_element(:tag, "footer"))
   end
 
-  test "presence of Terms of Use link", %{conn: conn}  do
+  test "presence of Terms of Use link"  do
     find_element(:link_text, "Terms of Use")
     |> click()
-    assert(current_path() == page_path(conn, :terms_of_use))
+    assert(current_path() == page_path(build_conn(), :terms_of_use))
   end
 
   test "presence of Privacy Notice link" do
     find_element(:link_text, "Privacy Notice")
     |> click()
-    assert(current_path() == page_path(conn, :privacy_notice))
+    assert(current_path() == page_path(build_conn(), :privacy_notice))
   end
 
   test "presence of Sponsor Us link" do
     find_element(:link_text, "Sponsor Us")
     |> click()
-    assert(current_path() == page_path(conn, :sponsor_us))
+    assert(current_path() == page_path(build_conn(), :sponsor_us))
   end
 
   test "presence of Partner with Us link" do
     find_element(:link_text, "Partner with Us")
     |> click()
-    assert(current_path() == page_path(conn, :partner_with_us))
+    assert(current_path() == page_path(build_conn(), :partner_with_us))
   end
 
   describe "within footer" do
-    test "presence of Mission link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Mission link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Mission")
       |> click()
-      assert(current_path() == page_path(conn, :mission))
+      assert(current_path() == page_path(build_conn(), :mission))
     end
 
-    test "presence of Volunteer link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Volunteer link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Volunteer")
       |> click()
-      assert(current_path() == page_path(conn, :volunteer))
+      assert(current_path() == page_path(build_conn(), :volunteer))
     end
 
-    test "presence of Donate link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Donate link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Donate")
       |> click()
-      assert(current_path() == page_path(conn, :donate))
+      assert(current_path() == page_path(build_conn(), :donate))
     end
 
-    test "presence of Products link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Products link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Products")
       |> click()
-      assert(current_path() == page_path(conn, :products))
+      assert(current_path() == page_path(build_conn(), :products))
     end
 
-    test "presence of Partners link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Partners link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Partners")
       |> click()
-      assert(current_path() == page_path(conn, :partners))
+      assert(current_path() == page_path(build_conn(), :partners))
     end
 
-    test "presence of Contact link", %{parent_element: parent_element, conn: conn} do
+    test "presence of Contact link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:link_text, "Contact")
       |> click()
-      assert(current_path() == page_path(conn, :contact))
+      assert(current_path() == page_path(build_conn(), :contact))
     end
 
     test "presence of YouTube link", %{parent_element: parent_element} do
       parent_element
-      |> find_within_element(:class, "fa-youtube-play")
+      |> find_within_element(:id, "youtube-icon")
       |> click()
-      assert(current_url() == "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA?view_as=subscriber")
+      assert(current_url() == "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA")
     end
 
     test "presence of Twitter link", %{parent_element: parent_element} do
@@ -99,7 +99,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       parent_element
       |> find_within_element(:class, "fa-facebook-official")
       |> click()
-      assert(current_url() == "https://www.facebook.com/ChampionerOrg-839653576231962/")
+      assert(current_url() == "https://www.facebook.com/ChampionerOrg")
     end
 
     test "presence of Instagram link", %{parent_element: parent_element} do
@@ -118,7 +118,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       parent_element
       |> find_within_element(:class, "fa-medium")
       |> click()
-      assert(current_url() == "https://medium.com/@social_87520")
+      assert(current_url() == "https://medium.com/@ChampionerOrg")
     end
   end
 end
