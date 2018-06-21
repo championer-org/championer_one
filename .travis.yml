@@ -8,15 +8,23 @@ elixir:
 addons:
   chrome: stable
 before_install:
-  - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
+  - "export CHROME_BIN=chromium-browser"
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - "travis_wait npm install -g grunt-cli"
 before_script:
-  - export CHROMEDRIVER_VERSION=`curl -s http://chromedriver.storage.googleapis.com/LATEST_RELEASE`
-  - curl -L -O "http://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-  - unzip chromedriver_linux64.zip
-  - sudo chmod +x chromedriver
-  - sudo mv chromedriver /usr/local/bin
-  - nohup chromedriver &
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - "curl -sL https://raw.githubusercontent.com/travis-ci/artifacts/v0.7.8/install | bash"
+
+after_success:
+  - "./scripts/travis-upload.sh"
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/9f467aab5ea40801389a
+    on_success: change  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always
 script:
   - mix test
   - mix credo
