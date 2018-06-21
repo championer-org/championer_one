@@ -73,10 +73,9 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
       parent_element
       |> find_within_element(:class, "fa-instagram")
       |> click()
-      :timer.sleep(1000)
-      IO.puts current_url()
-      IO.inspect current_url(), label: "++++++++"
-      assert(current_url() =~ "instagram.com/championerorg")
+      # assert(current_url() =~ "instagram.com/championerorg")
+      assert(page_source() =~ "<title>ChampionerOrg (@championerorg)" <>
+                              " • Instagram photos and videos</title>")
     end
 
     test "presence of  Medium link", %{parent_element: parent_element} do
