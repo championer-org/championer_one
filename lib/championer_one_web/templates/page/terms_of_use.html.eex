@@ -1,0 +1,1 @@
+<h2><%= gettext "%{name} Terms of Use", name: "Championer One" %></h2>
