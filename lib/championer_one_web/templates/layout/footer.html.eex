@@ -16,7 +16,7 @@
       <ul id="social-media">
         <li><%= link '', to: 'https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA', class: "fa fa-youtube-play fa-lg", id: "youtube-icon" %></li>
         <li><%= link '', to: 'https://twitter.com/ChampionerOrg', class: "fa fa-twitter fa-lg" %></li>
-        <li><%= link '', to: 'http://facebook.com/ChampionerOrg', class: "fa fa-facebook-official fa-lg" %></i></li>
+        <li><%= link '', to: 'http://facebook.com/ChampionerOrg', class: "fa fa-facebook-official fa-lg" %></li>
         <li><%= link '', to: "https://www.instagram.com/championerorg/", class: "fa fa-instagram fa-lg" %></li>
         <li><%= link '', to: 'http://medium.com/@ChampionerOrg', class: "fa fa-medium fa-lg" %></li>
       </ul>
