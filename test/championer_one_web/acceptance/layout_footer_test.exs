@@ -7,7 +7,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
 
   setup do
     navigate_to page_path(build_conn(), :index)
-    {:ok, conn: build_conn(), parent_element: find_element(:tag, "footer")}
+    {:ok, parent_element: find_element(:tag, "footer")}
   end
 
   test "presence of footer section" do
