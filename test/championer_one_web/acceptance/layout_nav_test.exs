@@ -8,7 +8,7 @@ defmodule ChampionerOneWeb.LayoutNavTest do
   setup do
     conn = build_conn()
     navigate_to page_path(conn, :index)
-    maximize_window(current_window_handle())
+    set_window_size(current_window_handle(), 1200, 800)
     {:ok, conn: conn, parent_element: find_element(:tag, "nav")}
   end
 
