@@ -83,19 +83,15 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
 
     test "presence of YouTube link", %{parent_element: parent_element} do
       parent_element
-      |> find_within_element(:id, "youtube-icon")
-      |> element_displayed?()
-      |> assert()
-      # |> click()
-      # assert(current_url() == "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA")
+      |> find_within_element(:link_text, "YouTube")
+      |> click()
+      assert(current_url() == "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA")
     end
 
     test "presence of Twitter link", %{parent_element: parent_element} do
       parent_element
-      |> find_within_element(:class, "fa-twitter")
-      |> move_to(10, 10)
-      mouse_down()
-      mouse_up()
+      |> find_within_element(:link_text, "Twitter")
+      |> click()
       # click({:class, "fa-twitter"})
       assert(current_url() == "https://twitter.com/ChampionerOrg")
     end
@@ -103,35 +99,31 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     test "presence of Facebook link", %{parent_element: parent_element} do
       # current_window_handle() |> maximize_window()
       # :timer.sleep(9000)
-      link_visibility = parent_element
-                       |> find_within_element(:class, "fa-facebook-official")
-                       |> css_property("visibility")
-      assert(link_visibility == "visible")
+      parent_element
+      |> find_within_element(:link_text, "Facebook")
+      |> click()
       # |> IO.inspect(label: "++++++++")
       # |> click()
-      # assert(current_url() == "https://www.facebook.com/ChampionerOrg")
+      assert(current_url() == "https://www.facebook.com/ChampionerOrg")
     end
 
     test "presence of Instagram link", %{parent_element: parent_element} do
       #:timer.sleep(9000)
       parent_element
-      |> find_within_element(:class, "fa-instagram")
-      # |> click()
-      element?(:class, "fa-instagram")
-      |> assert()
+      |> find_within_element(:link_text, "Instagram")
+      |> click()
       # :timer.sleep(1000)
       # IO.puts current_url()
       # IO.inspect current_url(), label: "++++++++"
       # assert(current_url() =~ "instagram.com/championerorg")
-      # assert(page_source() =~ "<title>ChampionerOrg (@championerorg)" <>
-                              # " • Instagram photos and videos</title>")
+      assert(page_source() =~ "<title>ChampionerOrg (@championerorg)" <>
+                              " • Instagram photos and videos</title>")
     end
 
     test "presence of  Medium link", %{parent_element: parent_element} do
-      link = parent_element
-             |> find_within_element(:class, "fa-medium")
-      #:timer.sleep(9000)
-      click(link)
+      parent_element
+      |> find_within_element(:link_text, "Medium")
+      |> click()
       assert(current_url() == "https://medium.com/@ChampionerOrg")
     end
   end
