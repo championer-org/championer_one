@@ -96,6 +96,8 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     end
 
     test "presence of Facebook link", %{parent_element: parent_element} do
+      current_window_handle() |> maximize_window()
+      :timer.sleep(9000)
       parent_element
       |> find_within_element(:class, "fa-facebook-official")
       |> click()
@@ -103,7 +105,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     end
 
     test "presence of Instagram link", %{parent_element: parent_element} do
-      :timer.sleep(9000)
+      #:timer.sleep(9000)
       parent_element
       |> find_within_element(:class, "fa-instagram")
       |> click()
@@ -118,7 +120,7 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     test "presence of  Medium link", %{parent_element: parent_element} do
       link = parent_element
              |> find_within_element(:class, "fa-medium")
-      :timer.sleep(9000)
+      #:timer.sleep(9000)
       click(link)
       assert(current_url() == "https://medium.com/@ChampionerOrg")
     end
