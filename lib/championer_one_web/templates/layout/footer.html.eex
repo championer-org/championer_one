@@ -14,11 +14,11 @@
     <div class="col s2 center">
      <h5 class="yellow-text">Social Media</h5>
       <ul id="social-media">
-        <li><%= link '', to: 'https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA', class: "fa fa-youtube-play fa-lg", id: "youtube-icon" %></li>
-        <li><%= link '', to: 'https://twitter.com/ChampionerOrg', class: "fa fa-twitter fa-lg" %></li>
-        <li><%= link '', to: 'http://facebook.com/ChampionerOrg', class: "fa fa-facebook-official fa-lg" %></i></li>
-        <li><%= link '', to: "https://www.instagram.com/championerorg/", class: "fa fa-instagram fa-lg" %></li>
-        <li><%= link '', to: 'http://medium.com/@ChampionerOrg', class: "fa fa-medium fa-lg" %></li>
+        <li><%= link "YouTube", to: "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA", class: "fa fa-youtube-play fa-lg", id: "youtube-icon" %></li>
+        <li><%= link "Twitter", to: "https://twitter.com/ChampionerOrg", class: "fa fa-twitter fa-lg" %></li>
+        <li><%= link "Facebook", to: "http://facebook.com/ChampionerOrg", class: "fa fa-facebook-official fa-lg" %></li>
+        <li><%= link "Instagram", to: "https://www.instagram.com/championerorg", class: "fa fa-instagram fa-lg" %></li>
+        <li><%= link "Medium", to: "http://medium.com/@ChampionerOrg", class: "fa fa-medium fa-lg" %></li>
       </ul>
     </div>
     <div class="col s5 center">
