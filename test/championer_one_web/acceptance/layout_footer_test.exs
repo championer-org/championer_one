@@ -93,7 +93,10 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
     test "presence of Twitter link", %{parent_element: parent_element} do
       parent_element
       |> find_within_element(:class, "fa-twitter")
-      click({:class, "fa-twitter"})
+      |> move_to(10, 10)
+      mouse_down()
+      mouse_up()
+      # click({:class, "fa-twitter"})
       assert(current_url() == "https://twitter.com/ChampionerOrg")
     end
 
