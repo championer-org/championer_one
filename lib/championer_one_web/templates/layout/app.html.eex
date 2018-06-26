@@ -12,10 +12,10 @@
   </head>
 
   <body class="yellow lighten-4">
+    <header class="header">
+      <%= render "navbar.html", assigns %>
+    </header>
     <div class="container">
-      <header class="header">
-        <%= render "navbar.html", assigns %>
-      </header>
     </div> <!-- /container -->
 
     <%= render "background_video.html", assigns %>
