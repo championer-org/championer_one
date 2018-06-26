@@ -1,32 +1,32 @@
 import $ from "jquery"
 
-const background_video = {
-  run: $( document ).ready(function() {
+const background_video = () => {
 
+
+  scaleVideoContainer();
+  console.log("Is background_video ran? Yes, if you see this in the console");
+  initBannerVideoSize('.video-container .poster img');
+  initBannerVideoSize('.video-container .filter');
+  initBannerVideoSize('.video-container video');
+
+  $(window).on('resize', function() {
       scaleVideoContainer();
+      scaleBannerVideoSize('.video-container .poster img');
+      scaleBannerVideoSize('.video-container .filter');
+      scaleBannerVideoSize('.video-container video');
+  });
 
-      initBannerVideoSize('.video-container .poster img');
-      initBannerVideoSize('.video-container .filter');
-      initBannerVideoSize('.video-container video');
+  
 
-      $(window).on('resize', function() {
-          scaleVideoContainer();
-          scaleBannerVideoSize('.video-container .poster img');
-          scaleBannerVideoSize('.video-container .filter');
-          scaleBannerVideoSize('.video-container video');
-      });
-
-  }),
-
-  scaleVideoContainer: function scaleVideoContainer() {
+  function scaleVideoContainer() {
 
       var height = $(window).height() + 5;
       var unitHeight = parseInt(height) + 'px';
       $('.homepage-hero-module').css('height',unitHeight);
 
-  },
-
-  initBannerVideoSize: function initBannerVideoSize(element) {
+  }
+  
+  function initBannerVideoSize(element) {
 
       $(element).each(function(){
           $(this).data('height', $(this).height());
@@ -35,9 +35,9 @@ const background_video = {
 
       scaleBannerVideoSize(element);
 
-  },
-
-  scaleBannerVideoSize: function scaleBannerVideoSize(element) {
+  }
+  
+  function scaleBannerVideoSize(element) {
 
       var windowWidth = $(window).width(),
       windowHeight = $(window).height() + 5,

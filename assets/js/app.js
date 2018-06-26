@@ -22,4 +22,6 @@ import jQuery from "jquery"
 // import socket from "./socket"
 import background_video from "./background_video"
 
-background_video.run();
+$(window).on("load", function(){
+    background_video();
+});
