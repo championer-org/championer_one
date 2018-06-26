@@ -25,14 +25,15 @@
     bottom: 0;
     position: absolute;
 }
-.video-container .filter {
+.filter {
     z-index: 100;
     position: absolute;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.55);
     width: 100%;
 }
 .video-container video {
     position: absolute;
+    width: 100%;
     z-index: 0;
     bottom: 0;
 }
