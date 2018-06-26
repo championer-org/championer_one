@@ -51,9 +51,12 @@ exports.config = {
       // Do not use ES6 compiler in vendor code
       ignore: [/vendor/]
     },
+    copycat: {
+      "fonts": ["node_modules/font-awesome/fonts"]
+    },
     sass: {
       options: {
-        includePaths: ["node_modules/materialize-css/sass"],
+        includePaths: ["node_modules/materialize-css/sass", "node_modules/font-awesome/scss"],
         precision: 8
       }
     }
