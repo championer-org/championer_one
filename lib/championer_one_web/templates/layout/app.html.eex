@@ -9,6 +9,8 @@
 
     <title><%= title() %></title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/index.scss") %>">
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/mission.scss") %>">
   </head>
 
   <body>
