@@ -16,7 +16,7 @@
       <header class="header">
         <%= render "navbar.html", assigns %>
       </header>
-    </div> <!-- /container -->
+    <%# </div> <!-- /container --> %>
 
     <%= render "background_video.html", assigns %>
     <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
