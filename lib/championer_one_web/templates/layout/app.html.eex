@@ -29,6 +29,6 @@
     </div> <!-- /container -->
     <%= render "footer.html", assigns %>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <script>require("js/app").App.run()</script>
+    <%# <script>require("js/app").App.run()</script> %>
   </body>
 </html>
