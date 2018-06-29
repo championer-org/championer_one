@@ -1385,6 +1385,16 @@
       "integrity": "sha1-4wOogrNCzD7oylE6eZmXNNqzriw=",
       "dev": true
     },
+    "copycat-brunch": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/copycat-brunch/-/copycat-brunch-1.1.0.tgz",
+      "integrity": "sha1-EOF7hZCeDhKZgd+5AwuYZkg9Zr0=",
+      "requires": {
+        "loggy": "1.0.2",
+        "mkdirp": "^0.5.1",
+        "quickly-copy-file": "^0.1.0"
+        }
+      },
     "core-js": {
       "version": "2.5.6",
       "resolved": "https://registry.npmjs.org/core-js/-/core-js-2.5.6.tgz",
@@ -2015,6 +2025,11 @@
       "resolved": "https://registry.npmjs.org/fn-args/-/fn-args-1.0.0.tgz",
       "integrity": "sha1-l02voa6sSsfCH6Ccw7gPZQEG7TI=",
       "dev": true
+    },
+    "font-awesome": {
+      "version": "4.7.0",
+      "resolved": "https://registry.npmjs.org/font-awesome/-/font-awesome-4.7.0.tgz",
+      "integrity": "sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM="
     },
     "for-in": {
       "version": "1.0.2",
@@ -4544,6 +4559,14 @@
       "integrity": "sha1-nsYfeQSYdXB9aUFFlv2Qek1xHnM=",
       "dev": true
     },
+    "quickly-copy-file": {
+     "version": "0.1.0",
+     "resolved": "https://registry.npmjs.org/quickly-copy-file/-/quickly-copy-file-0.1.0.tgz",
+     "integrity": "sha1-0UBj/2WfaGl+fL/ugXoHu2NSN8I=",
+     "requires": {
+       "mkdirp": "~0.5.0"
+     }
+   },
     "randomatic": {
       "version": "3.0.0",
       "resolved": "https://registry.npmjs.org/randomatic/-/randomatic-3.0.0.tgz",

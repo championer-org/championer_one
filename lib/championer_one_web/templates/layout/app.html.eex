@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
-  <body>
+  <body class="yellow lighten-4">
     <div class="container">
       <header class="header">
         <%= render "navbar.html", assigns %>
       </header>
+    <%# </div> <!-- /container --> %>
 
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <%= render "background_video.html", assigns %>
+    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <main role="main">
-        <%= render @view_module, @view_template, assigns %>
-      </main>
+    <main role="main">
+      <%= render @view_module, @view_template, assigns %>
+    </main>
 
     </div> <!-- /container -->
+    <%= render "footer.html", assigns %>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+    <%# <script>require("js/app").App.run()</script> %>
   </body>
 </html>
