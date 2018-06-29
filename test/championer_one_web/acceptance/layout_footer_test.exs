@@ -6,79 +6,80 @@ defmodule ChampionerOneWeb.LayoutFooterTest do
   hound_session()
 
   setup do
-    navigate_to page_path(build_conn(), :index)
-    {:ok, parent_element: find_element(:tag, "footer")}
+    conn = build_conn()
+    navigate_to page_path(conn, :index)
+    {:ok, conn: conn, parent_element: find_element(:tag, "footer")}
   end
 
   test "presence of footer section" do
     assert(find_element(:tag, "footer"))
   end
 
-  test "presence of Terms of Use link"  do
+  test "presence of Terms of Use link", %{conn: conn}  do
     find_element(:link_text, "Terms of Use")
     |> click()
-    assert(current_path() == page_path(build_conn(), :terms_of_use))
+    assert(current_path() == page_path(conn, :terms_of_use))
   end
 
-  test "presence of Privacy Notice link" do
+  test "presence of Privacy Notice link", %{conn: conn} do
     find_element(:link_text, "Privacy Notice")
     |> click()
-    assert(current_path() == page_path(build_conn(), :privacy_notice))
+    assert(current_path() == page_path(conn, :privacy_notice))
   end
 
-  test "presence of Sponsor Us link" do
+  test "presence of Sponsor Us link", %{conn: conn} do
     find_element(:link_text, "Sponsor Us")
     |> click()
-    assert(current_path() == page_path(build_conn(), :sponsor_us))
+    assert(current_path() == page_path(conn, :sponsor_us))
   end
 
-  test "presence of Partner with Us link" do
+  test "presence of Partner with Us link", %{conn: conn} do
     find_element(:link_text, "Partner with Us")
     |> click()
-    assert(current_path() == page_path(build_conn(), :partner_with_us))
+    assert(current_path() == page_path(conn, :partner_with_us))
   end
 
   describe "within footer" do
-    test "presence of Mission link", %{parent_element: parent_element} do
+    test "presence of Mission link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Mission")
       |> click()
-      assert(current_path() == page_path(build_conn(), :mission))
+      assert(current_path() == page_path(conn, :mission))
     end
 
-    test "presence of Volunteer link", %{parent_element: parent_element} do
+    test "presence of Volunteer link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Volunteer")
       |> click()
-      assert(current_path() == page_path(build_conn(), :volunteer))
+      assert(current_path() == page_path(conn, :volunteer))
     end
 
-    test "presence of Donate link", %{parent_element: parent_element} do
+    test "presence of Donate link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Donate")
       |> click()
-      assert(current_path() == page_path(build_conn(), :donate))
+      assert(current_path() == page_path(conn, :donate))
     end
 
-    test "presence of Products link", %{parent_element: parent_element} do
+    test "presence of Products link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Products")
       |> click()
-      assert(current_path() == page_path(build_conn(), :products))
+      assert(current_path() == page_path(conn, :products))
     end
 
-    test "presence of Partners link", %{parent_element: parent_element} do
+    test "presence of Partners link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Partners")
       |> click()
-      assert(current_path() == page_path(build_conn(), :partners))
+      assert(current_path() == page_path(conn, :partners))
     end
 
-    test "presence of Contact link", %{parent_element: parent_element} do
+    test "presence of Contact link", %{parent_element: parent_element, conn: conn} do
       parent_element
       |> find_within_element(:link_text, "Contact")
       |> click()
-      assert(current_path() == page_path(build_conn(), :contact))
+      assert(current_path() == page_path(conn, :contact))
     end
 
     test "presence of YouTube link", %{parent_element: parent_element} do
