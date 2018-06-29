@@ -71,7 +71,9 @@ exports.config = {
   npm: {
     enabled: true,
     globals: {
-      materialize: "materialize-css"
+      materialize: "materialize-css",
+      $: "jquery",
+      jQuery: "jquery"
     }
   }
 };
