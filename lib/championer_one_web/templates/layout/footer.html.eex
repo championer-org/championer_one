@@ -1,6 +1,6 @@
 <footer class="teal darken-4">
   <div class="row">
-    <div class="col s5 center">
+    <div class="col s4 center">
       <h5 class="yellow-text">Get Involved</h5>
       <ul id="footer-mobile">
         <li><%= link "Mission", to: page_path(@conn, :mission) %></li>
@@ -11,17 +11,17 @@
         <li><%= link "Contact", to: page_path(@conn, :contact) %></li>
       </ul>
     </div>
-    <div class="col s2 center">
+    <div class="col s4 center">
      <h5 class="yellow-text">Social Media</h5>
       <ul id="social-media">
-        <li><%= link "YouTube", to: "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA", class: "fa fa-youtube-play fa-lg", id: "youtube-icon" %></li>
-        <li><%= link "Twitter", to: "https://twitter.com/ChampionerOrg", class: "fa fa-twitter fa-lg" %></li>
-        <li><%= link "Facebook", to: "http://facebook.com/ChampionerOrg", class: "fa fa-facebook-official fa-lg" %></li>
-        <li><%= link "Instagram", to: "https://www.instagram.com/championerorg", class: "fa fa-instagram fa-lg" %></li>
+        <li><%= link "YouTube", to: "https://www.youtube.com/channel/UCqRP-fMnT3YUdnYqmkHDYOA", class: "fa fa-youtube-play fa-lg", id: "youtube-icon" %></li><br>
+        <li><%= link "Twitter", to: "https://twitter.com/ChampionerOrg", class: "fa fa-twitter fa-lg" %></li><br>
+        <li><%= link "Facebook", to: "http://facebook.com/ChampionerOrg", class: "fa fa-facebook-official fa-lg" %></li><br>
+        <li><%= link "Instagram", to: "https://www.instagram.com/championerorg", class: "fa fa-instagram fa-lg" %></li><br>
         <li><%= link "Medium", to: "http://medium.com/@ChampionerOrg", class: "fa fa-medium fa-lg" %></li>
       </ul>
     </div>
-    <div class="col s5 center">
+    <div class="col s4 center">
       <h5 class="yellow-text">Learn More</h5>
       <ul id="footer-mobile">
         <li><%= link "Terms of Use", to: page_path(@conn, :terms_of_use) %></li>

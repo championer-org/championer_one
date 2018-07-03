@@ -4,11 +4,6 @@ $fa-font-path: "../fonts";
 @import "font-awesome";
 @import "materialize";
 
-h2 {
-  font-family: 'BloggerSans';
-}
-
-p {
-  font-size: 20px;
-  letter-spacing: 1px;
+.container {
+  width: 75%;
 }
