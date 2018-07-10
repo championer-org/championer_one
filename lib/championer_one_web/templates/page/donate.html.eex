@@ -1,8 +1,8 @@
 <h2><%= gettext "Help %{name}. Donate!", name: "Championer One" %></h2>
-<p class="flow-text">
+<p class="donate flow-text">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Magna ac placerat vestibulum lectus mauris ultrices. Pretium aenean pharetra magna ac. Nibh cras pulvinar mattis nunc. Odio facilisis mauris sit amet massa vitae. Odio euismod lacinia at quis. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Id aliquet risus feugiat in ante metus dictum at. In mollis nunc sed id. Purus non enim praesent elementum. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies.
 </p>
-<p class="donate flow-text">
+<p class="donate">
   Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus. Etiam non quam lacus suspendisse. Risus ultricies tristique nulla aliquet. Cursus mattis molestie a iaculis. Eu augue ut lectus arcu. Habitant morbi tristique senectus et netus et. Quis auctor elit sed vulputate mi sit amet mauris. Vel pretium lectus quam id. Suspendisse faucibus interdum posuere lorem ipsum dolor. Nunc vel risus commodo viverra maecenas. Congue quisque egestas diam in arcu cursus euismod quis. Egestas pretium aenean pharetra magna ac. Adipiscing diam donec adipiscing tristique risus. Tortor id aliquet lectus proin nibh. Amet nulla facilisi morbi tempus iaculis urna id. Vivamus arcu felis bibendum ut tristique et. Turpis egestas integer eget aliquet nibh praesent tristique. Nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit. Dolor magna eget est lorem ipsum dolor.
 </p>
 <p>
