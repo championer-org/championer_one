@@ -1,0 +1,7 @@
+/* Webfont: Tondu */@font-face {
+    font-family: 'Tondu Beta';
+    src: url('/fonts/tondu/Tondu_Beta.ttf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
