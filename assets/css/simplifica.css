@@ -1,0 +1,7 @@
+/* Webfont: Asap */@font-face {
+    font-family: 'Simplifica';
+    src: url('/fonts/Simplifica/Simplifica.ttf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

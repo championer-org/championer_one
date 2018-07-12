@@ -1,0 +1,11 @@
+/* Webfont: BloggerSans-Medium */@font-face {
+    font-family: 'Blogger Sans';
+    src: url('/fonts/blogger-sans/Web/BloggerSans/BloggerSans-Medium.eot'); /* IE9 Compat Modes */
+    src: url('/fonts/blogger-sans/Web/BloggerSans/BloggerSans-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('/fonts/blogger-sans/Web/BloggerSans/BloggerSans-Medium.woff') format('woff'), /* Modern Browsers */
+         url('/fonts/blogger-sans/Web/BloggerSans/BloggerSans-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('/fonts/blogger-sans/Web/BloggerSans/BloggerSans-Medium.svg#BloggerSans-Medium') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

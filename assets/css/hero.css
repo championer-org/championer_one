@@ -1,0 +1,8 @@
+/* Webfont: Asap */@font-face {
+    font-family: 'Hero';
+    src: url('/fonts/hero/Hero.otf'),
+         url('/fonts/hero/Hero Light.otf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

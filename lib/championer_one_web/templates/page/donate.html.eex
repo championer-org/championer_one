@@ -1,5 +1,5 @@
 <h2><%= gettext "Help %{name}. Donate!", name: "Championer One" %></h2>
-<p class="flow-text">
+<p class="donate">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Magna ac placerat vestibulum lectus mauris ultrices. Pretium aenean pharetra magna ac. Nibh cras pulvinar mattis nunc. Odio facilisis mauris sit amet massa vitae. Odio euismod lacinia at quis. Quisque egestas diam in arcu cursus euismod quis viverra nibh. Id aliquet risus feugiat in ante metus dictum at. In mollis nunc sed id. Purus non enim praesent elementum. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies.
 </p>
 <p class="donate flow-text">
