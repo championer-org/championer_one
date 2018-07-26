@@ -14,6 +14,7 @@
 import "phoenix_html"
 import $ from "jquery"
 import jQuery from "jquery"
+
 // Import local files
 //
 // Local files can be imported directly using relative
@@ -21,6 +22,7 @@ import jQuery from "jquery"
 
 // import socket from "./socket"
 import background_video from "./background_video"
+import "./navbar"
 background_video();
 $( document ).ready(function() {
     background_video();
