@@ -1,0 +1,8 @@
+/* Webfont: Asap */@font-face {
+    font-family: 'Fox Cat';
+    src: url('/fonts/fox-cat/Fox & Cat.ttf'),
+         url('/fonts/fox-cat/Fox & Cat.otf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

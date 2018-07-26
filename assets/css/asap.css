@@ -1,0 +1,7 @@
+/* Webfont: Asap */@font-face {
+    font-family: 'Asap';
+    src: url('/fonts/asap/Asap-Regular.ttf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

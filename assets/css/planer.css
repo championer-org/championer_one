@@ -1,0 +1,7 @@
+/* Webfont: Asap */@font-face {
+    font-family: 'Planer';
+    src: url('/fonts/planer/Planer Reg.ttf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}

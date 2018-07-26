@@ -1,0 +1,8 @@
+/* Webfont: Prime */@font-face {
+    font-family: 'Prime';
+    src: url('/fonts/prime/Prime Regular.otf'),
+         url('/fonts/prime/Prime Light.otf');
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
