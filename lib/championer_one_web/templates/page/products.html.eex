@@ -1,10 +1,10 @@
 <h2><%= gettext "%{name} products", name: "Championer One" %></h2>
-<p class="products">
+<p class="flow-text">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies mi eget mauris pharetra et. Amet consectetur adipiscing elit duis. Purus ut faucibus pulvinar elementum integer enim. Ut ornare lectus sit amet est placerat. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. At elementum eu facilisis sed. Dictum non consectetur a erat nam at lectus. Sem viverra aliquet eget sit amet tellus. Imperdiet proin fermentum leo vel orci porta non pulvinar. Turpis cursus in hac habitasse. Cum sociis natoque penatibus et magnis dis parturient montes.
 </p>
-<p class="products flow-text">
+<p class="flow-text">
   Arcu ac tortor dignissim convallis aenean et tortor at. Aliquet risus feugiat in ante metus dictum. Neque egestas congue quisque egestas diam in arcu cursus euismod. Ultrices tincidunt arcu non sodales neque sodales ut etiam sit. Non diam phasellus vestibulum lorem sed risus ultricies. Convallis posuere morbi leo urna molestie at elementum eu facilisis. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Eleifend mi in nulla posuere sollicitudin. Tortor consequat id porta nibh venenatis. Consequat mauris nunc congue nisi. Scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt. Aliquet lectus proin nibh nisl. A diam sollicitudin tempor id eu nisl nunc. Leo duis ut diam quam nulla porttitor massa id neque. Amet aliquam id diam maecenas ultricies mi. Augue neque gravida in fermentum et sollicitudin. Vulputate mi sit amet mauris commodo quis imperdiet.
 </p>
-<p>
+<p class="flow-text">
   Adipiscing bibendum est ultricies integer quis. Facilisi nullam vehicula ipsum a. Faucibus in ornare quam viverra. Vel quam elementum pulvinar etiam non. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Sed vulputate mi sit amet. Sit amet nisl suscipit adipiscing bibendum est ultricies. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Tortor condimentum lacinia quis vel. Ornare aenean euismod elementum nisi quis eleifend. At erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Sit amet justo donec enim diam. At in tellus integer feugiat scelerisque varius. Malesuada pellentesque elit eget gravida cum sociis natoque. Eleifend quam adipiscing vitae proin sagittis nisl. Ac turpis egestas sed tempus urna et pharetra pharetra massa. Morbi quis commodo odio aenean sed. Viverra aliquet eget sit amet. Diam donec adipiscing tristique risus nec feugiat in fermentum. Volutpat odio facilisis mauris sit amet.
 </p>

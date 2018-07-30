@@ -1,10 +1,10 @@
 <h2><%= gettext "%{name} Terms of Use", name: "Championer One" %></h2>
-<p class="terms-of-use">
+<p class="flow-text">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium viverra suspendisse potenti nullam. Tellus integer feugiat scelerisque varius morbi enim. Neque vitae tempus quam pellentesque nec nam aliquam sem et. Quis ipsum suspendisse ultrices gravida dictum fusce ut. Eu mi bibendum neque egestas congue quisque egestas. Ac turpis egestas integer eget aliquet nibh praesent tristique. A cras semper auctor neque. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Maecenas pharetra convallis posuere morbi. Tempus imperdiet nulla malesuada pellentesque elit eget. Sed augue lacus viverra vitae congue eu consequat ac felis. Viverra adipiscing at in tellus integer feugiat scelerisque varius. Nec feugiat nisl pretium fusce id. Ornare arcu odio ut sem nulla pharetra diam sit.
 </p>
-<p class="terms-of-use flow-text">
+<p class="flow-text">
   Ultrices tincidunt arcu non sodales. Risus ultricies tristique nulla aliquet. Risus sed vulputate odio ut enim. Id neque aliquam vestibulum morbi. Dictum non consectetur a erat. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. In pellentesque massa placerat duis ultricies lacus sed turpis. Magna eget est lorem ipsum. Quis ipsum suspendisse ultrices gravida dictum fusce. Massa massa ultricies mi quis hendrerit. Euismod nisi porta lorem mollis.
 </p>
-<p>
+<p class="flow-text">
   Massa massa ultricies mi quis. Id neque aliquam vestibulum morbi. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ornare arcu odio ut sem nulla pharetra diam. Malesuada fames ac turpis egestas sed tempus. Mauris rhoncus aenean vel elit scelerisque. Aliquet nibh praesent tristique magna sit amet purus gravida quis. Cras adipiscing enim eu turpis egestas. Sapien eget mi proin sed libero enim sed. Elit at imperdiet dui accumsan sit amet. Elementum eu facilisis sed odio morbi quis commodo odio aenean. Feugiat nisl pretium fusce id velit ut tortor pretium. Cursus sit amet dictum sit amet justo donec. Vitae tortor condimentum lacinia quis vel eros. Venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam. Velit aliquet sagittis id consectetur purus. Bibendum est ultricies integer quis auctor elit sed vulputate.
 </p>
