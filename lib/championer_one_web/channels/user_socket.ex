@@ -2,7 +2,7 @@ defmodule ChampionerOneWeb.UserSocket do
   use Phoenix.Socket
 
   ## Channels
-  # channel "room:*", ChampionerOneWeb.RoomChannel
+  channel "chat_rooms:support", ChampionerOneWeb.ChatRoomsChannel
 
   ## Transports
   transport :websocket, Phoenix.Transports.WebSocket,

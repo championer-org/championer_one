@@ -14,6 +14,7 @@
 import "phoenix_html"
 import $ from "jquery"
 import jQuery from "jquery"
+import socket from "./socket"
 // Import local files
 //
 // Local files can be imported directly using relative
