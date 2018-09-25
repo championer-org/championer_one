@@ -23,10 +23,10 @@ defmodule ChampionerOneWeb.Router do
     get "/products", PageController, :products
     get "/partners", PageController, :partners
     get "/contact", PageController, :contact
-    get "/terms_of_use", PageController, :terms-of-use
-    get "/privacy_notice", PageController, :privacy-notice
-    get "/sponsor_us", PageController, :sponsor-us
-    get "/partner_with_us", PageController, :partner-with-us
+    get "/terms-of-use", PageController, :terms_of_use
+    get "/privacy-notice", PageController, :privacy_notice
+    get "/sponsor-us", PageController, :sponsor_us
+    get "/partner-with-us", PageController, :partner_with_us
   end
 
   # Other scopes may use custom stacks.
