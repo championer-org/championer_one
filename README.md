@@ -87,6 +87,35 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
    * You can always edit and prepend Work-In-Progress to your PR title, to let the team know that your PR is not finished yet (e.g. `[WIP] 17 add logo`).
 
+   ## Linux(ubuntu) Setup Instructions:
+   Install Elixir:
+  * Add Erlang Solutions repo: Run: `$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb`
+  * Run: `sudo apt-get update`
+
+
+  * Install the Erlang/OTP platform and all of its applications: 
+  `sudo apt-get install esl-erlang`
+  * Install Elixir: 
+  `sudo apt-get install elixir` 
+
+ For other linux distros(Fedora,...etc) and unix-like systems:
+ check:
+ https://elixir-lang.org/install.html#unix-and-unix-like
+
+ Install Phoenix:
+  * Install hex(dependencies manager: `$ mix local.hex`
+
+  * Install Phoenix framework:
+  ` $  mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez`
+ 
+ Incase of any errors check the official installation guide: https://hexdocs.pm/phoenix/installation.html
+ 
+ * Install Chromedriver:
+
+`$  sudo apt-get install unzip` ;
+
+`$ wget -O /tmp/chromedriver.zip http://chromedriver.googlecode.com/files/chromedriver_linux64_19.0.1068.0.zip && sudo unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/`
+
 ## Learn more about Championer
 
   * Production website: http://www.championer.org
