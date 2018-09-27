@@ -13,20 +13,18 @@
   </head>
 
   <body class="yellow lighten-4">
-    <div class="container">
-      <header class="header">
-        <%= render "navbar.html", assigns %>
-      </header>
-    <%# </div> <!-- /container --> %>
+    <header class="header">
+      <%= render "navbar.html", assigns %>
+    </header>
 
     <%= render "background_video.html", assigns %>
-    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+    <div class="container">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-    <main role="main">
-      <%= render @view_module, @view_template, assigns %>
-    </main>
-
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
     </div> <!-- /container -->
     <%= render "footer.html", assigns %>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
