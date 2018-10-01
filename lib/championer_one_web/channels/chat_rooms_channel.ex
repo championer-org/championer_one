@@ -1,4 +1,5 @@
 defmodule ChampionerOneWeb.ChatRoomsChannel do
+  @moduledoc false
   use ChampionerOneWeb, :channel
 
   def join("chat_rooms:support", payload, socket) do
