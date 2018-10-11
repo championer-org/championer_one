@@ -1,5 +1,5 @@
-<div class="nav-wrap">
-  <nav role="navigation" class="transparent">
+<div class="nav-wrap navbar-fixed teal darken-4">
+  <nav role="navigation" class="teal darken-4">
     <div class="nav-wrapper">
       <a href="<%= page_path(@conn, :index) %>" class="brand-logo">
         <img src="<%= static_path(@conn, "/images/championer_one_logo.png") %>" alt="ChampionerOne Logo">
