@@ -1,5 +1,8 @@
 <div class="homepage-hero-module">
   <div class="video-container">
+    <header class="header">
+      <%= render "navbar.html", assigns %>
+    </header> 
     <video autoplay preload="auto" loop class="fillWidth">
         <source src="<%= static_path(@conn, "/videos/Workaholic/Workaholic.mp4") %>" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
         <source src="<%= static_path(@conn, "/videos/Workaholic/Workaholic.webm") %>" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.

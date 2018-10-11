@@ -5,7 +5,8 @@ $(window).on ('scroll', function(){
     $('div.nav-wrap').addClass("navbar-fixed");
     $('#nav-mobile a').css("color", "#004d40");
   } else {
-    $('nav').removeClass("teal darken-4 container").addClass("transparent");
+    $('nav').removeClass("teal darken-4 container").addClass(newFunction());
     $('div.nav-wrap').removeClass("navbar-fixed teal darken-4");
   }
 });
+
