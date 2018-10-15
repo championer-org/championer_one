@@ -18,6 +18,7 @@ before_script:
   - sudo mv chromedriver /usr/local/bin
   - nohup chromedriver &
   - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost &
+  - sudo npm install npm@latest -g
 script:
   - mix test
   - mix credo
