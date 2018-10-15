@@ -21,6 +21,6 @@ before_script:
 script:
   - mix test
   - mix credo
-  - cd assets && npm audit
+  - npm audit
 
 
