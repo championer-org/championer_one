@@ -27,6 +27,7 @@ defmodule ChampionerOneWeb.Router do
     get "/privacy-notice", PageController, :privacy_notice
     get "/sponsor-us", PageController, :sponsor_us
     get "/partner-with-us", PageController, :partner_with_us
+    resources "/volunteers", VolunteerController
   end
 
   # Other scopes may use custom stacks.
