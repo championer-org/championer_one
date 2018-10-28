@@ -1,0 +1,18 @@
+<h2>Show Volunteer</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @volunteer.name %>
+  </li>
+
+  <li>
+    <strong>Github username:</strong>
+    <%= @volunteer.github_username %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: volunteer_path(@conn, :edit, @volunteer) %></span>
+<span><%= link "Back", to: volunteer_path(@conn, :index) %></span>
