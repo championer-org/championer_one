@@ -1,7 +1,7 @@
 defmodule ChampionerOne.Volunteers.Volunteer do
+  @moduledoc false
   use Ecto.Schema
   import Ecto.Changeset
-  @moduledoc false
   @derive {Phoenix.Param, key: :github_username}
 
 
