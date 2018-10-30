@@ -1,1 +1,2 @@
 <h2><%= gettext "Volunteer for %{name}!", name: "Championer One" %></h2>
+<p>See our list of volunteer contributors <%= link "here", to: volunteer_path(@conn, :index) %>.</p>
