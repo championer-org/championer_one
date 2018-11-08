@@ -26,7 +26,7 @@
     position: absolute;
 }
 .filter {
-    z-index: 100;
+    z-index: 50;
     position: absolute;
     background: rgba(0, 0, 0, 0.55);
     width: 100%;
@@ -39,4 +39,26 @@
 }
 .video-container video.fillWidth {
     width: 100%;
+}
+.video-overlay-container {
+ z-index: 200;
+ position: absolute;
+ font-family: 'Catamaran', sans-serif;
+ width: 100%;
+ color: #ffecb3;
+ text-align: center;
+}
+.video-overlay-container h2 {
+ color: #DED91C;
+}
+.btn-overlay {
+ margin-top: 8rem;
+ color: #ffecb3;
+ border: 2px solid #DED91C;
+}
+.btn-overlay:hover, .btn-overlay:active {
+ color: #DED91C;
+ border: 2px solid #ffecb3;
+ border-right: 3px solid #ffecb3;
+ border-bottom: 3px solid #ffecb3;
 }
