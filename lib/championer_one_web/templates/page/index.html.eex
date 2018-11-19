@@ -12,8 +12,12 @@
   Ut mattis feugiat tempus. Praesent ut ultrices neque. Donec auctor ipsum pharetra quam faucibus finibus. Nunc malesuada tortor felis, quis tincidunt ante scelerisque vitae. Vivamus sodales pellentesque est, fringilla venenatis lorem ultrices vitae. Pellentesque et risus ut ex sollicitudin tincidunt. Don</p>
 </p>
 
+<h2>Chat Support</h2>
+<div id="chat-box">
+</div>
+
 <form id="chat-form">
-  <input type="text" placeholder="Username" id="user-name"></input>
+  <input type="text" placeholder="Name" id="user-name"></input>
   <textarea placeholder="Type your message here..." id="user-msg"></textarea>
   <button class="btn btn-primary btn-well" type="submit">Send</button>
 </form>

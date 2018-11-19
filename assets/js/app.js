@@ -15,8 +15,11 @@ import "phoenix_html"
 import $ from "jquery"
 import jQuery from "jquery"
 import socket from "./socket"
+import ChatRooms from "./chat_rooms"
+
+ChatRooms.init(socket)
 // Import local files
-//
+
 // Local files can be imported directly using relative
 // paths "./socket" or full ones "web/static/js/socket".
 
