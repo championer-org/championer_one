@@ -22,6 +22,7 @@ import socket from "./socket"
 
 // import socket from "./socket"
 import background_video from "./background_video"
+import "./navbar"
 background_video();
 $( document ).ready(function() {
     background_video();
