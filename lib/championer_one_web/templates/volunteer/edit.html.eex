@@ -1,0 +1,5 @@
+<h2>Edit Volunteer</h2>
+
+<%= render "form.html", Map.put(assigns, :action, volunteer_path(@conn, :update, @volunteer)) %>
+
+<span><%= link "Back", to: volunteer_path(@conn, :index) %></span>
