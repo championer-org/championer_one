@@ -42,7 +42,7 @@ defmodule ChampionerOne.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       {:plug_cowboy, "~> 1.0"},
-      {:hound, git: "git@github.com:HashNuke/hound.git", branch: "master"},
+      {:hound, git: "https://github.com/HashNuke/hound.git", branch: "master"},
       {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false}
     ]
   end
