@@ -13,10 +13,15 @@
   </head>
 
   <body class="yellow lighten-4">
-   
-
-    <%= render "background_video.html", assigns %>
-    <div class="container">
+    <header class="header">
+      <%= render "navbar.html", assigns %>
+    </header>     
+    <%= if @view_template == "index.html" do %>
+      <%= if @view_module == ChampionerOneWeb.PageView do %>
+        <%= render "background_video.html", assigns %>
+      <% end %>
+    <% end %>
+       <div class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
