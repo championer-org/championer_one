@@ -1,10 +1,6 @@
 <div class="homepage-hero-module">
   <div class="video-container">
-    <header class="header">
-      <%= render "navbar.html", assigns %>
-    </header> 
-    
-  	<div class="video-overlay-container">
+    <div class="video-overlay-container">
 	   <h2>We're a Tech Nonprofit</h2>
 	   <h5><em>Volunteers design and develop prototypes and products that make a difference in the world</em></h5>
 	   <a href="<%= page_path(@conn, :volunteer) %>" class="hide-on-small-only hoverable btn-large btn-overlay transparent waves-effect waves-light">Volunteer</a>

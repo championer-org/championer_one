@@ -16,6 +16,7 @@ defmodule ChampionerOneWeb.VolunteerControllerTest do
     test "lists all volunteers", %{conn: conn} do
       conn = get conn, volunteer_path(conn, :index)
       assert html_response(conn, 200) =~ "Listing Volunteers"
+      refute html_response(conn, 200) =~ "We're a Tech Nonprofit"
     end
   end
 
