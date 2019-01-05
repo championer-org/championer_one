@@ -9,6 +9,10 @@
   font-family: 'Catamaran', sans-serif;
 }
 
-// .nav-wrap {
-//   background-color: #004d40;
-// }
+.sidenav-trigger > .fa-lg {
+  vertical-align: 0%;
+}
+
+.sidenav-overlay {
+  z-index: 0;
+}
