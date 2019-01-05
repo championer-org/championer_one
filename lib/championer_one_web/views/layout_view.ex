@@ -7,9 +7,9 @@ defmodule ChampionerOneWeb.LayoutView do
 
   def page_links(conn) do
     [:mission, :volunteer, :donate, :products, :partners, :contact]
-    |> Enum.map(&generate_link(&1, conn))
+    |> Enum.map(&list_item(&1, conn))
   end
-  def generate_link(page, conn) do
+  def list_item(page, conn) do
     content_tag(:li, linkify_atom(page, conn))
   end
 
