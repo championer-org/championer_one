@@ -1,13 +1,18 @@
 <h2 class="center"><%= gettext "Welcome to %{name}!", name: "Championer One" %></h2>
-<p class="flow-text">
-  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-<p class="flow-text">
-  Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
-</p>
-<p class="flow-text">
-  Phasellus tristique tristique volutpat. Nulla ut magna ligula. Ut urna mauris, ullamcorper et ornare in, egestas nec lectus. Phasellus nunc justo, imperdiet in risus ac, volutpat placerat lectus. Cras mauris purus, convallis in est vitae, tristique euismod diam. Ut accumsan ipsum efficitur, iaculis felis non, placerat nunc. Integer vitae erat nec nibh elementum porttitor. Nullam et sem eget leo suscipit feugiat. Nam quis dolor quis purus tincidunt molestie. Vestibulum vel elit quam. Curabitur consectetur aliquam risus, vel hendrerit urna congue at. Integer justo ante, commodo at porta et, rutrum vel ligula. Etiam ut cursus magna, eget tempus erat. Pellentesque volutpat egestas quam, id vulputate odio pretium in. Aenean accumsan eu felis eu varius.
-</p>
-<p class="flow-text">
-  Ut mattis feugiat tempus. Praesent ut ultrices neque. Donec auctor ipsum pharetra quam faucibus finibus. Nunc malesuada tortor felis, quis tincidunt ante scelerisque vitae. Vivamus sodales pellentesque est, fringilla venenatis lorem ultrices vitae. Pellentesque et risus ut ex sollicitudin tincidunt. Don</p>
-</p>
+    <div class="row">
+      <div class="col s12">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+     </div>
+      <div class="col s6">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+      </div>
+      <div class="col s6">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+      </div>
+    </div>
