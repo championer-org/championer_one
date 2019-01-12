@@ -4,9 +4,13 @@ $(window).on ('scroll', function(){
     // $('nav').addClass("teal darken-4");
     // $('div.nav-wrap').addClass("navbar-fixed");
     // $('#nav-mobile a').css("color", "#DED91C");
-  // } else {
+    // } else {
     // $('nav').removeClass("container").addClass(newFunction());
     // $('div.nav-wrap').removeClass("navbar-fixed teal darken-4");
   }
+});
+
+$(document).ready(function(){
+  $('.sidenav').sidenav();
 });
 
