@@ -8,14 +8,18 @@
     <meta name="author" content="">
 
     <title><%= title() %></title>
+
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
   </head>
 
   <body class="yellow lighten-4">
-   
-
-    <%= render "background_video.html", assigns %>
+    <header class="header">
+      <%= render "navbar.html", assigns %>
+    </header>     
+    <%= if @view_template == "index.html"  &&  @view_module == ChampionerOneWeb.PageView do %>
+        <%= render "background_video.html", assigns %>
+    <% end %>
     <div class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
@@ -28,4 +32,5 @@
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <%# <script>require("js/app").App.run()</script> %>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>
