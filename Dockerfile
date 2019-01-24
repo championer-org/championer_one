@@ -5,7 +5,7 @@ ENV PORT=4000 MIX_ENV=prod
 
 # Cache elixir deps
 ADD mix.exs mix.lock ./
-RUN do deps.get, deps.compile
+RUN mix do deps.get, deps.compile
 
 #Same with npm deps
 ADD assets/package.json assets/
