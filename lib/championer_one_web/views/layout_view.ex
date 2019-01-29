@@ -6,7 +6,7 @@ defmodule ChampionerOneWeb.LayoutView do
   end
   
   def index_page?(conn) do
-    Phoenix.Controller.current_path(conn) |> String.length === 1
+    conn |> Phoenix.Controller.current_path |> String.length === 1
   end
   
   def page_links(conn) do
