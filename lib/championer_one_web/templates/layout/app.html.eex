@@ -32,9 +32,8 @@
       </main>
     </div> <!-- /container -->
     <%= render "footer.html", assigns %>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
-    <%# <script>require("js/app").App.run()</script> %>
-  </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <%= {:safe, js_script_tag() } %>
+  <%# <script>require("js/app").App.run()</script> %>
+  </body>
 </html>
