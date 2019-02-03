@@ -14,10 +14,10 @@
 
     <body class="yellow lighten-4">
 
-        <div id= "page-505" class="teal-text text-darken-4">
+        <div id= "page-500" class="teal-text text-darken-4">
             <h1>500</h1>
-            <p><em>This page is not working,the problem is not you it's me</em></p>
-            <p>Click here to homepage: &nbsp <%= link("Home", to: "/") %></p>
+            <p><em>This page is not working. The problem is not you; it's me.</em></p>
+            <p>Click here to return to the homepage: <%= link("Home", to: "/") %></p>
         <div>
 
     </body>
