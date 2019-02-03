@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title><%= title() %></title>
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link rel="stylesheet" href="/css/app.css">
+    </head>
+
+    <body class="yellow lighten-4">
+        <div id= "page-404" class="teal-text text-darken-4">
+            <h1>404</h1>
+            <p><em>Sorry, the page you are looking for does not exist.</em></p>
+            <p>Click here to return to the homepage: <%= link("Home", to: "/") %></p>
+        <div>
+
+    </body>
+
+</html>

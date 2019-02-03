@@ -1,12 +1,16 @@
 defmodule ChampionerOneWeb.ErrorView do
   use ChampionerOneWeb, :view
+  def title do
+    "Hello ChampionerOne!"
+  end
+
 
   def render("404.html", _assigns) do
-    "Page not found"
+    render("404-page.html", %{})
   end
 
   def render("500.html", _assigns) do
-    "Internal server error"
+    render("500-page.html", %{})
   end
 
   # In case no render clause matches or no
