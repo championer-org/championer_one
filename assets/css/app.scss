@@ -1,8 +1,6 @@
-/* This file is for your main application css. */
-$fa-font-path: "../fonts";
-
-@import "font-awesome";
-@import "materialize";
+//@import "variables";
+//@import "../node_modules/font-awesome/scss/font-awesome";
+@import "~materialize-css/sass/materialize";
 
 .container {
   width: 75%;
