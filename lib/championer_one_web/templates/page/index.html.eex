@@ -1,7 +1,18 @@
-<h2><%= gettext "Welcome to %{name}!", name: "Championer One" %></h2>
-<p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
-<p>
-    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-</p>
+<h2 class="center"><%= gettext "Welcome to %{name}!", name: "Championer One" %></h2>
+    <div class="row">
+      <div class="col s12">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+     </div>
+      <div class="col s6">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+      </div>
+      <div class="col s6">
+        <p class="flow-text">
+          Morbi faucibus placerat sagittis. Etiam gravida ultrices tristique. Ut mattis erat vel libero iaculis posuere. Aenean feugiat velit venenatis, ultricies elit in, feugiat odio. Pellentesque aliquet ex ac dolor maximus, scelerisque malesuada est faucibus. Nulla blandit libero sed luctus molestie. Sed sed velit mi. Nunc condimentum condimentum orci, sit amet pharetra lacus sagittis in. Aliquam tempor imperdiet condimentum. Aliquam hendrerit ac ex et feugiat. Praesent eu libero quis turpis sodales fringilla.
+        </p>
+      </div>
+    </div>

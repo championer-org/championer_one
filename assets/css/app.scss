@@ -3,3 +3,16 @@ $fa-font-path: "../fonts";
 
 @import "font-awesome";
 @import "materialize";
+
+.container {
+  width: 75%;
+}
+
+p {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'Catamaran', sans-serif;
+}
