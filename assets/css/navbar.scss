@@ -4,11 +4,17 @@
   vertical-align: middle;
 }
 
-#nav-mobile a {
+#nav-mobile li > a,
+nav ul > li > a,
+nav a {
   color: #DED91C;
   font-family: 'Catamaran', sans-serif;
 }
 
-// .nav-wrap {
-//   background-color: #004d40;
-// }
+.sidenav-trigger > .fa-lg {
+  vertical-align: 0%;
+}
+
+.sidenav-overlay {
+  z-index: 0;
+}
