@@ -79,20 +79,21 @@ Then skip to the [Reviewing from GitHub](#reviewing-from-github) section
   ![Screenshot 2018-06-09 16.40.40.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb778f1162b43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041183fe5837a89c43ca59f64be84456b65e.png)
 
   * **If you prefer,** you can also click on the `Resolve conflicts` link which will take you to the merge conflicts.
-
+  * **For each file with a merge conflict,** you'll click on `Mark as resolved` so you can move on to the next one:
   ![Screenshot 2018-06-09 16.42.47.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb77af1162c43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041183fe5837a89c43ca59f64be84b50b65e.png)
 
   ![Screenshot 2018-06-09 16.43.17.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb77bf1132c43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041183fe5837a89c43ca59f64be84450b65e.png)
 
-    ![Screenshot 2018-06-09 16.44.15.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb77cf1132e43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041083fe5837a89c43ca59f64be8445db65e.png)
+  * **View the following file,** and click `Next` to cycle through the conflicts in the file, if there are more than one:
+  ![Screenshot 2018-06-09 16.44.15.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb77cf1132e43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041083fe5837a89c43ca59f64be8445db65e.png)
 
-  ![Screenshot 2018-06-09 16.51.35.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb679f1112e43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041183fe5837a89c43ca59f64be84b53b65e.png)
-
+  * **Be sure to remove the branch name comments** and the equals sign line, as you decide how to resolve:
   ![Screenshot 2018-06-09 16.55.52.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb67df1172943434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041083fe5837a89c43ca59f64ae14452b65e.png)
-
+  
+  * **Click on** `Commit merge` to kickoff the full update of the branch:
   ![Screenshot 2018-06-09 16.59.00.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a26cbb671f1122b43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041e83fe5837a89c43ca59f64be84952b65e.png)
 
-* **When all merge conflicts** have been resolved, you will be taken back to the Pull Request where you can make your review.
+* **As the develop branch merges,** you will be taken back to the Pull Request where you can make your review.
 
   ![Screenshot 2018-06-09 17.04.36.png](https://waffleio-direct-uploads-production.s3.amazonaws.com/uploads/57e387b76082a50f00d31003/125516c66e82c728ace21e0d46db978826878dba87e6ab03f60da1cc6416713e795de37a27cbb37cf1112d43434d0eee1e020a17b8eb8339a3e43c71895f58ead0695926cf6911acb08b17b606ba20de5d99a4fedb1294b7607caddecd5d340c041083fe5837a89c43ca59f64ae1445db65e.png)
 
