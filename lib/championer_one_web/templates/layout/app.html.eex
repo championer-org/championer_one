@@ -10,6 +10,10 @@
     <title><%= title() %></title>
     <%= {:safe, css_link_tag() } %>
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet" crossorigin="anonymous"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      >
   </head>
 
   <body class="yellow lighten-4">
