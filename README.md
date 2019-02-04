@@ -89,8 +89,8 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
    * You can always edit and prepend Work-In-Progress to your PR title, to let the team know that your PR is not finished yet (e.g. `[WIP] 17 add logo`).
 
 # Linux(ubuntu) Setup Instructions:
-  * I highly recommend to use ![asdf](https://github.com/asdf-vm/asdf/) version manager with support for Ruby, Node.js, Elixir, Erlang and few more: [List of all avaliable plugins](https://asdf-vm.github.io/asdf/#/plugins-all)
-  * The most up to date iinstallation manual can be found at ![asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
+  * I highly recommend to use [asdf](https://github.com/asdf-vm/asdf/) version manager with support for Ruby, Node.js, Elixir, Erlang and few more: [List of all avaliable plugins](https://asdf-vm.github.io/asdf/#/plugins-all)
+  * The most up to date iinstallation manual can be found at [asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
   * To check which shell you are running run `echo $0` in the command line
 
 ## Install plugins for asdf:
