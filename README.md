@@ -87,35 +87,41 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
    * You can always edit and prepend Work-In-Progress to your PR title, to let the team know that your PR is not finished yet (e.g. `[WIP] 17 add logo`).
 
-   ## Linux(ubuntu) Setup Instructions:
-   Install Elixir:
-  * Add Erlang Solutions repo: Run: `$ wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && sudo dpkg -i erlang-solutions_1.0_all.deb`
-  * Run: `sudo apt-get update`
+# Linux(ubuntu) Setup Instructions:
+  * I highly recommend to use ![asdf](https://github.com/asdf-vm/asdf/) version manager with support for Ruby, Node.js, Elixir, Erlang and few more: [List of all avaliable plugins](https://asdf-vm.github.io/asdf/#/plugins-all)
+  * The most up to date iinstallation manual can be found at ![asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
+  * To check which shell you are running run `echo $0` in the command line
 
+## Install plugins for asdf:
+  `asdf plugin add erlang`
+  `asdf plugin add elixir`
+  `asdf plugin add nodejs`
 
-  * Install the Erlang/OTP platform and all of its applications: 
-  `sudo apt-get install esl-erlang`
-  * Install Elixir: 
-  `sudo apt-get install elixir` 
+## We need to install elixir, erlang and  and node.js:
+### erlang:
+`asdf install erlang 21.2.5`
+`asdf local erlang 21.2.5`
+### elixir:
+`asdf install elixir 1.8.1-otp-21`
+`asdf local elixir 1.8.1-otp-21`
+### node.js
+This plugin expects the gpg package to be present to check the package signature
+#### MacOS
+GNU Core Utils - `brew install coreutils`
+GnuPG - `brew install gpg`
+#### Linux (Debian)
+GnuPG - `apt-get install gpg`
+dirmngr - `apt-get install dirmngr`
+`asdf install nodejs 11.9.0`
+`asdf local nodejs 11.9.0`
 
- For other linux distros(Fedora,...etc) and unix-like systems:
- check:
- https://elixir-lang.org/install.html#unix-and-unix-like
-
- Install Phoenix:
-  * Install hex(dependencies manager: `$ mix local.hex`
-
-  * Install Phoenix framework:
-  ` $  mix archive.install https://github.com/phoenixframework/archives/raw/master/phx_new.ez`
- 
- Incase of any errors check the official installation guide: https://hexdocs.pm/phoenix/installation.html
- 
  * Install Chromedriver:
 
-`$  sudo apt-get install unzip` ;
+To run tests you need chromedriver installed:
+* You can either install chromium which has chromedriver bundled in 
+    `sudo apt update && sudo apt install chromuim`
+* or you can download a version supported by chrome version you use from the relaase page:
+[chromedriver download page](http://chromedriver.chromium.org/downloads)
+`sudo unzip ~/Downloads/chromedriver_linux64.zip -d /usr/local/bin`
 
-`$ wget -O /tmp/chromedriver.zip http://chromedriver.googlecode.com/files/chromedriver_linux64_19.0.1068.0.zip && sudo unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/`
 
-## Learn more about Championer
-
-  * Production website: http://www.championer.org
