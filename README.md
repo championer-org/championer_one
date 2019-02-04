@@ -94,29 +94,37 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
   * To check which shell you are running run `echo $0` in the command line
 
 ## Install plugins for asdf:
-  `asdf plugin add erlang`
-  `asdf plugin add elixir`
-  `asdf plugin add nodejs`
+```
+  asdf plugin add erlang
+  asdf plugin add elixir
+  asdf plugin add nodejs
+```
 
 ## We need to install elixir, erlang and  and node.js:
 ### erlang:
-`asdf install erlang 21.2.5`
-`asdf local erlang 21.2.5`
+```
+asdf install erlang 21.2.5
+asdf local erlang 21.2.5
+```
 ### elixir:
-`asdf install elixir 1.8.1-otp-21`
-`asdf local elixir 1.8.1-otp-21`
+```
+asdf install elixir 1.8.1-otp-21
+asdf local elixir 1.8.1-otp-21
+```
 ### node.js
 This plugin expects the gpg package to be present to check the package signature
 #### MacOS
-GNU Core Utils - `brew install coreutils`
-GnuPG - `brew install gpg`
+* GNU Core Utils - `brew install coreutils`
+* GnuPG - `brew install gpg`
 #### Linux (Debian)
-GnuPG - `apt-get install gpg`
-dirmngr - `apt-get install dirmngr`
-`asdf install nodejs 11.9.0`
-`asdf local nodejs 11.9.0`
+* GnuPG - `apt-get install gpg`
+* dirmngr - `apt-get install dirmngr`
+```
+asdf install nodejs 11.9.0
+asdf local nodejs 11.9.0
+```
 
- * Install Chromedriver:
+## Install Chromedriver:
 
 To run tests you need chromedriver installed:
 * You can either install chromium which has chromedriver bundled in 
