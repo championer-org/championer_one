@@ -90,7 +90,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 # Linux(ubuntu) Setup Instructions:
   * I highly recommend to use [asdf](https://github.com/asdf-vm/asdf/) version manager with support for Ruby, Node.js, Elixir, Erlang and few more: [List of all avaliable plugins](https://asdf-vm.github.io/asdf/#/plugins-all)
-  * The most up to date iinstallation manual can be found at [asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
+  * The most up to date installation manual can be found at [asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
   * To check which shell you are running run `echo $0` in the command line
 
 ## Install plugins for asdf:
@@ -120,8 +120,8 @@ This plugin expects the gpg package to be present to check the package signature
 * GnuPG - `apt-get install gpg`
 * dirmngr - `apt-get install dirmngr`
 ```
-asdf install nodejs 11.9.0
-asdf local nodejs 11.9.0
+asdf install nodejs 10.15.1
+asdf local nodejs 10.15.1
 ```
 
 ## Install Chromedriver:
