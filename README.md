@@ -95,9 +95,9 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 ## Install plugins for asdf:
 ```
-  asdf plugin add erlang
-  asdf plugin add elixir
-  asdf plugin add nodejs
+  asdf plugin-add erlang
+  asdf plugin-add elixir
+  asdf plugin-add nodejs
 ```
 
 ## We need to install elixir, erlang and  and node.js:
