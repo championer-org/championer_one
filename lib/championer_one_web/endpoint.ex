@@ -1,7 +1,9 @@
 defmodule ChampionerOneWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :championer_one
 
-  socket "/socket", ChampionerOneWeb.UserSocket
+  socket "/socket", ChampionerOneWeb.UserSocket,
+    websocket: true # or list of options
+    # longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
   #
