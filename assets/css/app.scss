@@ -3,6 +3,7 @@ $fa-font-path: "../fonts";
 
 @import "font-awesome";
 @import "materialize";
+@import "../../deps/phoenix_live_view/assets/css/live_view.scss";
 
 .container {
   width: 75%;

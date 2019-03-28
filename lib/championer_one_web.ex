@@ -40,6 +40,7 @@ defmodule ChampionerOneWeb do
       import ChampionerOneWeb.Router.Helpers
       import ChampionerOneWeb.ErrorHelpers
       import ChampionerOneWeb.Gettext
+      import Phoenix.LiveView, only: [live_render: 2, live_render: 3]
     end
   end
 
@@ -48,6 +49,7 @@ defmodule ChampionerOneWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 
