@@ -4,7 +4,7 @@ language: elixir
 otp_release:
   - 20.3
 elixir:
-  - 1.6.4
+  - 1.8.1
 addons:
   chrome: stable
 before_script:
