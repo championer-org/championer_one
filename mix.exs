@@ -33,7 +33,7 @@ defmodule ChampionerOne.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.2"},
+      {:phoenix, "~> 1.3.3"},
       {:phoenix_pubsub, "~> 1.0"},
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
@@ -46,8 +46,7 @@ defmodule ChampionerOne.Mixfile do
         git: "https://github.com/HashNuke/hound.git",
         ref: "0613a33f065a1eaa91fab602b8bc9af367d78ec1"
       },
-      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false},
-      {:phoenix_live_view, github: "phoenixframework/phoenix_live_view"}
+      {:credo, "~> 0.9.1", only: [:dev, :test], runtime: false}
     ]
   end
 
