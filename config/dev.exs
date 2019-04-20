@@ -38,7 +38,7 @@ config :championer_one, ChampionerOneWeb.Endpoint,
       ~r{priv/gettext/.*(po)$},
       ~r{lib/championer_one_web/views/.*(ex)$},
       ~r{lib/championer_one_web/templates/.*(eex)$},
-      ~r{lib/championer_one_web/live/.*(ex)$}
+      ~r{lib/championer_one_we/live/.*(ex)$}
     ]
   ]
 

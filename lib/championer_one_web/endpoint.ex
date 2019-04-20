@@ -56,4 +56,8 @@ defmodule ChampionerOneWeb.Endpoint do
       {:ok, config}
     end
   end
+  config :championer_one, ChampionerOneWeb.Endpoint,
+   live_view: [
+     signing_salt: "SECRET_SALT"
+   ]
 end
