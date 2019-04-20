@@ -88,6 +88,49 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
    * You can always edit and prepend Work-In-Progress to your PR title, to let the team know that your PR is not finished yet (e.g. `[WIP] 17 add logo`).
 
-## Learn more about Championer
+# Linux(ubuntu) Setup Instructions:
+  * I highly recommend to use [asdf](https://github.com/asdf-vm/asdf/) version manager with support for Ruby, Node.js, Elixir, Erlang and few more: [List of all avaliable plugins](https://asdf-vm.github.io/asdf/#/plugins-all)
+  * The most up to date installation manual can be found at [asdf installation manual](https://github.com/asdf-vm/asdf/#/core-manage-asdf-vm)
+  * To check which shell you are running run `echo $0` in the command line
 
-  * Production website: http://www.championer.org
+## Install plugins for asdf:
+```
+  asdf plugin-add erlang
+  asdf plugin-add elixir
+  asdf plugin-add nodejs
+```
+
+## We need to install elixir, erlang and  and node.js:
+### erlang:
+```
+asdf install erlang 21.2.5
+asdf local erlang 21.2.5
+```
+### elixir:
+```
+asdf install elixir 1.8.1-otp-21
+asdf local elixir 1.8.1-otp-21
+```
+### node.js
+This plugin expects the gpg package to be present to check the package signature
+#### MacOS
+* GNU Core Utils - `brew install coreutils`
+* GnuPG - `brew install gpg`
+#### Linux (Debian)
+* GnuPG - `apt-get install gpg`
+* dirmngr - `apt-get install dirmngr`
+```
+asdf install nodejs 10.15.1
+asdf local nodejs 10.15.1
+```
+
+## Install Chromedriver:
+
+To run tests you need chromedriver installed:
+* You can either install chromium which has chromedriver bundled in 
+    `sudo apt update && sudo apt install chromuim`
+* or you can download a version supported by chrome version you use from the relaase page:
+[chromedriver download page](http://chromedriver.chromium.org/downloads)
+`sudo unzip ~/Downloads/chromedriver_linux64.zip -d /usr/local/bin`
+
+
