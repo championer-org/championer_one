@@ -1,7 +1,9 @@
 defmodule ChampionerOneWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :championer_one
-
+  
   socket "/socket", ChampionerOneWeb.UserSocket
+  
+  socket "/live", Phoenix.LiveView.Socket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -54,4 +56,8 @@ defmodule ChampionerOneWeb.Endpoint do
       {:ok, config}
     end
   end
+  config :championer_one, ChampionerOneWeb.Endpoint,
+   live_view: [
+     signing_salt: "SECRET_SALT"
+   ]
 end
