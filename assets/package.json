@@ -22,6 +22,6 @@
     "uglify-js-brunch": "2.10.0"
   },
   "engines": {
-    "node": "8.9.4"
+    "node": "10.15.1 "
   }
 }
