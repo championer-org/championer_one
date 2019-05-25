@@ -17,6 +17,11 @@ render_errors: [view: ChampionerOneWeb.ErrorView, accepts: ~w(html json)],
 pubsub: [name: ChampionerOne.PubSub,
   adapter: Phoenix.PubSub.PG2]
 
+config :championer_one, ChampionerOneWeb.Endpoint,
+  live_view: [
+    signing_salt: "GogTTSkVI9LDX+4GqKWNlEgz/9o+alx4"
+  ]
+
 # Configures Elixir's Logger
 config :logger, :console,
 format: "$time $metadata[$level] $message\n",
@@ -31,6 +36,8 @@ additional_capabilities: %{
     "--headless"
   ]}
 }
+config :phoenix,
+  template_engines: [leex: Phoenix.LiveView.Engine]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
